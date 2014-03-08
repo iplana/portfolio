@@ -1,0 +1,11 @@
+#header-boxen {
+	background-image: url(imgs/IMG_2462.jpg);
+	background-position: 50% -120px;
+}
+#h1-boxen {
+ 	font: 500% "league-gothic", Arial, sans-serif;
+ 	letter-spacing: 1px;
+}
+.h2-boxen {
+	font: 180% "league-gothic", Arial, sans-serif;
+	}

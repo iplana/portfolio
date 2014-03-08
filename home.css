@@ -1,0 +1,10 @@
+#header-home {
+	background-image: url(imgs/IMG_3267.jpg);
+	background-position: 50% -10px;
+	height: 800px; 
+}
+#container-home {
+	width: 50%;
+	margin-bottom: 5%;
+	max-width: 750px;
+}

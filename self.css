@@ -1,0 +1,15 @@
+#header-self {
+	background-image: url(imgs/self.jpg);
+	background-position: 50% -250px;
+}
+
+#h1-self {
+	font: 350% "sommet-rounded", sans-serif;
+	font-weight: 700;
+	top: 87%;
+	color: black;
+}
+.h2-self {
+	font: 140% "sommet-rounded", sans-serif;
+	font-weight: 700;
+}
