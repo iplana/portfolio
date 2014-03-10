@@ -149,6 +149,11 @@ p {
 	width: 50%;
 	text-align: center;
 }
+#marginalie-mobile {
+	display: none;
+	opacity: 0.5;
+	font: 90% "myriad-pro-semi-condensed", Helvetica, sans-serif; 
+}
 
 footer {
 	position: relative;
@@ -160,7 +165,7 @@ footer {
 	color: white;
 	text-align: center;
 	padding-top: 30px;
-	font: 80% "myriad-pro-semi-condensed", Helvetica, sans-serif;
+	font: 90% "myriad-pro-semi-condensed", Helvetica, sans-serif;
 }
 
 .contact {
@@ -182,7 +187,11 @@ footer {
 	.content {
 		margin-top: 210px;
 	}
-	.metainfos, .artikel {
+	.metainfos {
+		display: none;
+	}
+
+	.artikel, #marginalie-mobile {
 		float: none;
 		width: 90%;
 		padding-left: 5%;
@@ -191,8 +200,8 @@ footer {
 	.lead {
 		font-size: 100%;
 	}
-	h1 {
-		height: 80px;
+	#marginalie-mobile {
+		display: block;
 	}
 }
 @media (min-width: 569px) and (max-width: 768px) {
@@ -208,11 +217,17 @@ footer {
 	h1 {
 		height: 100px;
 	}
-	.metainfos, .artikel {
+	.metainfos {
+		display: none;
+	} 
+	.artikel, #marginalie-mobile {
 		float: none;
 		width: 80%;
 		padding-left: 10%;
 		font-size: 100%;
+	}
+	#marginalie-mobile {
+		display: block;
 	}
 }
 @media (min-width: 769px) and (max-width: 1400px) {
