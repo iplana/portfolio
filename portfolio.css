@@ -172,12 +172,15 @@ footer {
 
 
 
-@media (max-width: 480px) {
+@media (min-device-width:320px) and (max-device-width: 568px) {
 	body {
 		font-size: 16px;
 	}
 	header {
-		height: 280px;
+		height: 290px;
+	}
+	.content {
+		margin-top: 210px;
 	}
 	.metainfos, .artikel {
 		float: none;
@@ -185,16 +188,16 @@ footer {
 		padding-left: 5%;
 		font-size: 100%;
 	}
-	.content {
-		margin-top: 200px;
+	.lead {
+		font-size: 100%;
 	}
 	h1 {
 		height: 80px;
 	}
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 569px) and (max-width: 768px) {
 	body {
-		font-size: 16px;
+		font-size: 17px;
 	}
 	header {
 		height: 500px;
@@ -214,13 +217,13 @@ footer {
 }
 @media (min-width: 769px) and (max-width: 1400px) {
 	header {
-		height: 600px;
+		height: 560px;
 	}
 	.content {
-		margin-top: 450px;
+		margin-top: 430px;
 	}
 	h1 {
-		height: 150px;
+		height: 130px;
 	}
 }
 @media (min-width: 1680px) {

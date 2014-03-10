@@ -1,13 +1,56 @@
 #header-self {
 	background-image: url(imgs/self.jpg);
+	background-position: center bottom;
 }
-#h1-self {
+.content {
+	margin-top: 580px;
+}
+h1 {
 	font: 350% "sommet-rounded", sans-serif;
 	font-weight: 700;
-	top: 87%;
 	color: black;
+	height: 120px;
 }
 .h2-self {
 	font: 140% "sommet-rounded", sans-serif;
 	font-weight: 700;
+}
+
+/* Behaviour with varying window size */
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 150%;
+		height: 35px;
+	}
+	.content {
+		margin-top: 255px;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	h1 {
+		font-size: 240%;
+		height: 55px;
+	}
+	.content {
+		margin-top: 445px;
+	}
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+	h1 {
+		font-size: 290%;
+		height: 90px;
+	}
+	.content {
+		margin-top: 510px;
+	}
+}
+@media (min-width: 1680px) {
+	.content {
+		margin-top: 680px;
+	}
+	h1 {
+		font-size: 380%;
+		height: 120px;
+	}
 }

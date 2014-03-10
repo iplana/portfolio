@@ -11,9 +11,9 @@ h1 {
 
 /* Behaviour with varying window size */
 
-@media (max-width: 480px) {
+@media (min-device-width:320px) and (max-device-width: 568px) {
 	h1 {
-		font-size: 250%;
+		font-size: 300%;
 	}
 }
 @media (min-width: 481px) and (max-width: 768px) {
