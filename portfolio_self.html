@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="self.css">
 	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
@@ -36,10 +37,7 @@
 							<b>Wohnen in einer Wundertüte</b> erschien am 26. Februar 2010 im <i>Glattaler</i>.
 						</p>
 						<p>
-							Text: Isabel Plana
-						</p>
-						<p>
-							Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
+							Bilder: <a href="http://www.empa.ch">Empa</a>
 						</p>
 					</div>
 				</aside>
@@ -54,7 +52,7 @@
 						<p>
 							Neben den zwei Industriedesignern, die im Rahmen ihrer Diplomarbeit und im Auftrag der Empa das Aussehen der Raumzelle entworfen haben, waren diverse Forscher und Entwickler am Werk. Denn die Wohnung in der Grösse eines Schifffrachtcontainers, die sich mit Hilfe eines Sattelschleppers beliebig transportieren lässt, ist zugleich Kraftwerk und Forschungsplattform.
 						</p>
-						<h2 class="h2-self">
+						<h2>
 							Energie vom Dach
 						</h2>
 						<p>
@@ -64,7 +62,7 @@
 							«Das Problem besteht darin, den produzierten Strom zu speichern», sagt Zimmermann. Er zeigt auf die zwei gut ein Meter langen Batterien, die unter dem Kajütenbett angebracht sind. «Das sind Lithium-Ionen-Batterien, wie sie auch für Handys  eingesetzt werden. Nur eben viel grösser», erklärt der Forscher. Der Vorteil gegenüber konventionellen Bleibatterien: Sie sind wesentlich kompakter und entladen sich bei Nichtgebrauch kaum. «Im Sommer erzeugen die Fotovoltaikzellen mehr Strom, als für den unmittelbaren Verbrauch benötigt wird. Mit den Batterien lässt sich dieser Überschussstrom für den Winter speichern.» 
 						</p>
 						</p>
-						<h2 class="h2-self">
+						<h2>
 						Zehnmal geringerer Wasserverbrauch
 						</h2>
 						<p>
@@ -74,8 +72,8 @@
 						<p>
 							Die technologische Wundertüte wartet nicht nur mit einem ausgeklügelten Energieversorgungssystem auf. <i>Self</i> verfügt auch über eine eigene, durch die Eawag entwickelte Wasseraufbereitung. Auf dem Dach wird das Regenwasser aufgefangen und mittels Ultrafiltration zu Trinkwasser aufbereitet. Mit einem ähnlichen Verfahren wird auch das leicht verschmutzte Brauchwasser rezykliert, wodurch der Wasserverbrauch um das Zehnfache sinkt. Zimmermann: «Unsere Raumzelle ist vollkommen unabhängig. Sie braucht weder einen Strom- noch einen Wasseranschluss und kommt weg von nicht-erneuerbaren Energien. Zu beweisen, dass dies ohne wesentliche Einschränkung des Wohnkomforts möglich ist, war das Ziel unseres Forschungsprojekts.»
 						</p>
-						<img class="pic" src="imgs/tattly.jpg">
-						<h2 class="h2-self">
+						<img class="pic" src="imgs/self_innen.jpg">
+						<h2>
 							Tüfteln, testen, weiterentwickeln
 						</h2>
 						<p>
@@ -88,13 +86,18 @@
 							«Die wirkliche Innovation unserer Raumzelle sind nicht einzelne Technologien. Die gab es teilweise schon vorher. Neuartig ist deren Kombination», erklärt Zimmermann. Um mit dem Zusammenspiel verschiedener Technologien, Systeme und Materialien experimentieren zu können – und weil Tests an richtigen Gebäuden in diesem Ausmass zu teuer wären –, haben sich die Empa-Forscher für die Realisierung einer Raumzelle entschieden. Hier können sie herumtüfteln, ausprobieren, optimieren. So ist etwa die aus sechs Schichten verschiedener Materialien aufgebaute hochisolierende Aussenwandkonstruktion entstanden, die nicht nur die Innentemperatur optimal reguliert, sondern auch den Lärm von aussen schluckt. «<i>Self</i> dient uns als Forschungsplattform, mit der wir zukunftsweisende Systeme ausprobieren, Probleme aufzeigen und Entwicklungen in die Wege leiten können», sagt Zimmermann. Die einzelnen Komponenten – etwa die Energieform Wasserstoff oder die Dämmung – könnten in Zukunft für Gebäude übernommen werden. Und was wird aus <i>Self</i>, wenn es sich ausgeforscht hat? «Dann kann die Raumzelle zum Beispiel als Gästezimmer für Empa-Besucher genutzt werden», sagt Zimmermann. «Oder als mobile Forschungsstation in den Bergen.»
 						</p>
 					</div>
+					<div class="marginalie-mobile">
+						<p>
+							<b>Wohnen in einer Wundertüte</b> erschien am 26. Februar 2010 im <i>Glattaler</i>.
+						</p>
+						<p>
+							Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
+						</p>
+					</div>
 					<div class="follow-up">
-						<div class="previous">
-							Vorheriger Artikel
-						</div>
-						<div class="next">
-							Nächster Artikel
-						</div>
+						<div>Mehr lesen?</div>
+						<p><a class="previous" href="portfolio_boxen.html">Ring frei für alle</a></p>
+						<p><a class="next" href="portfolio_tattly.html">Temporäre Tättowierung</a></p>
 					</div>
 				</section>
 			</article>
@@ -106,5 +109,15 @@
 			<a href="https://twitter.com/iPlana"><img class="contact" src="imgs/Twitter_logo_white.png"></a>
 			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.svg"></a>
 	</footer>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+			$(window).scroll(function(e) {
+			    var s = $(window).scrollTop();
+			    var opacityVal = 1 - (s / header);
+			    $('header').css('opacity', opacityVal);
+			});
+		})
+	</script>
 </body>
 </html>

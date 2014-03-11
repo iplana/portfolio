@@ -5,15 +5,22 @@ h1 {
 	font: 400% "lobster", serif;
 	letter-spacing: 2px;
 }
-.h2-tattly {
+h2 {
 	font-family: "lobster", serif;
 }
 
 /* Behaviour with varying window size */
 
-@media (max-width: 480px) {
+@media (min-device-width:320px) and (max-device-width: 568px) {
 	h1 {
 		font-size: 250%;
+		height: 110px;
+	}
+	header {
+		height: 300px;
+	}
+	.content {
+		margin-top: 190px;
 	}
 }
 @media (min-width: 481px) and (max-width: 768px) {

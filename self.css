@@ -1,3 +1,7 @@
+body {
+	background-color: white;
+}
+
 #header-self {
 	background-image: url(imgs/self.jpg);
 	background-position: center bottom;
@@ -11,7 +15,7 @@ h1 {
 	color: black;
 	height: 120px;
 }
-.h2-self {
+h2 {
 	font: 140% "sommet-rounded", sans-serif;
 	font-weight: 700;
 }
