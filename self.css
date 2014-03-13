@@ -46,7 +46,7 @@ h2 {
 		height: 90px;
 	}
 	.content {
-		margin-top: 480px;
+		margin-top: 470px;
 	}
 }
 @media (min-width: 1680px) {
@@ -54,7 +54,7 @@ h2 {
 		margin-top: 680px;
 	}
 	h1 {
-		font-size: 380%;
+		font-size: 320%;
 		height: 120px;
 	}
 }

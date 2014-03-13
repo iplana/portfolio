@@ -9,10 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="tattly.css">
 	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+			$(window).scroll(function(e) {
+			    var s = $(window).scrollTop();
+			    var opacityVal = 1 - (s / header);
+			    $('header').css('opacity', opacityVal);
+			});
+		})
+	</script>
 	<header id="header-tattly">
 	</header>
 
@@ -30,10 +40,12 @@
 		</h1>
 		<div class="article-wrap">
 			<article>
-				<aside class="metainfos">
+				<aside class="marginalie">
 					<div>
+					<div class="border">
+					</div>
 						<p>
-							<b>Temporäre Tättowierung</b> erschien <br> am 26. August 2012 im <i>Stil</i>-Magazin der <i>NZZ am Sonntag</i>.
+							<b>Temporäre Tättowierung</b> erschien am 26. August 2012 im <i>Stil</i>-Magazin der <i>NZZ am Sonntag</i>.
 						</p>
 						<p>
 							Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
@@ -42,66 +54,70 @@
 				</aside>
 				<section class="artikel">
 					<div class="lead">
-						Tattoos halten ein Leben lang. Wem das zu lange ist, braucht dennoch nicht auf sie zu verzichten. Eine Schweizerin in New York hat eine Alternative dazu entwickelt.
+						Tattoos halten ein Leben lang. Wem das zu lange ist, braucht dennoch nicht auf sie zu verzichten. Eine Schweizerin in New York hat eine Alternative entwickelt.
 					</div>
 					<div class="text">
 						<p>
 							«Kinderkram», werden sich einige jetzt denken. Tattoos zum Aufkleben mögen wir früher cool gefunden haben. In jenen unbeschwerten Tagen kindlichen Stilunbewusstseins, als wir unser Taschengeld für Kaugummis mit Bildchen verprassten, die, mit ein wenig Spucke befeuchtet, einen Superhelden oder ein Rennauto auf dem Unterarm hinterliessen. Mit unserem Ästhetikempfinden von heute glauben wir es besser zu wissen: Aufklebe-Tattoos sind unschön und einfallslos. 
 						</p>
 						<p>
-							Genau das dachte sich auch Tina Roth Eisenberg, als ihre fünfjährigeTochter mit einem dieser billig produzierten, optisch schmerzhaften Hautklebebildchen nach Hause kam. Es muss doch möglich sein, geschmackvoll und professionell gestaltete Aufklebe-Tattoos herzustellen, die auch Erwachsene ansprechen, sagte sich die Grafikdesignerin und machte sich ans Werk. Getreu dem Motto: «Man kann sich über Dinge aufregen oder sie selber in die Hand nehmen.»
+							Genau das dachte sich auch Tina Roth Eisenberg, als ihre fünfjährige Tochter mit einem dieser billig produzierten, optisch schmerzhaften Hautklebebildchen nach Hause kam. Es muss doch möglich sein, geschmackvoll und professionell gestaltete Aufklebe-Tattoos herzustellen, die auch Erwachsene ansprechen, sagte sich die Grafikdesignerin und machte sich ans Werk. Getreu dem Motto: «Man kann sich über Dinge aufregen oder sie selber in die Hand nehmen.»
 						</p>
 						<h2>
 							Bloggerin mit Ideen
 						</h2>
 						<p>
-							Tina Roth Eisenberg hat ein Händchen für originelle und innovative Ideen. Mit ihrem Design-Blog «Swissmiss» hat die gebürtige Appenzellerin, die seit 13 Jahren in New York lebt, Promi-Status erlangt. In den Kreisen der Kreativen, Designer und Künstler ist sie bestens vernetzt. So brauchte es nur ein paar Anrufe bei Freunden, und schon hatte sie bekannte Zeichner, Grafiker und Illustratoren wie Marc Johns, Julia Rothman und Jessica Hische für ihre Idee der Tattoos auf Zeit gewonnen. Nachdem sie einen auf Hautklebebilder spezialisierten Produzenten gefunden hatte, standen im Juli 2011 die ersten Kisten voller Tattoos in ihrem Design-Studio in Brooklyn. Tattly war geboren.
+							Tina Roth Eisenberg hat ein Händchen für originelle und innovative Ideen. Mit ihrem Design-Blog <i><a href="www.swissmiss.com">Swissmiss</a></i> hat die gebürtige Appenzellerin, die seit 13 Jahren in New York lebt, Promi-Status erlangt. In den Kreisen der Kreativen, Designer und Künstler ist sie bestens vernetzt. So brauchte es nur ein paar Anrufe bei Freunden, und schon hatte sie bekannte Zeichner, Grafiker und Illustratoren wie Marc Johns, Julia Rothman und Jessica Hische für ihre Idee der Tattoos auf Zeit gewonnen. Nachdem sie einen auf Hautklebebilder spezialisierten Produzenten gefunden hatte, standen im Juli 2011 die ersten Kisten voller Tattoos in ihrem Design-Studio in Brooklyn. <i><a href="www.tattly.com">Tattly</a></i> war geboren.
 						</p>
 						<p>
-							Millionen von Tattly-Tattoos haben die Erfinderin und ihr siebenköpfiges Team in nunmehr einem Jahr verschickt – in über 90 Länder. Ein Eintrag auf dem «Swissmiss»-Blog hatte ausgereicht, um Menschen aus aller Welt auf Tattly und die gleichnamige Internetseite aufmerksam zu machen. «Sogar eine kuwaitische Prinzessin dürfen wir zu unseren Kunden zählen», sagt Tina Roth Eisenberg stolz. «Es ist eine Wucht. Vom ersten Tag an gingen so viele Bestellungen ein, dass ich sofort mehr Leute engagieren musste.» 
+							Millionen von <i>Tattly</i>-Tattoos haben die Erfinderin und ihr siebenköpfiges Team in nunmehr einem Jahr verschickt – in über 90 Länder. Ein Eintrag auf dem <i>Swissmiss</i>-Blog hatte ausgereicht, um Menschen aus aller Welt auf <i>Tattly</i> und die gleichnamige Internetseite aufmerksam zu machen. «Sogar eine kuwaitische Prinzessin dürfen wir zu unseren Kunden zählen», sagt Tina Roth Eisenberg stolz. «Es ist eine Wucht. Vom ersten Tag an gingen so viele Bestellungen ein, dass ich sofort mehr Leute engagieren musste.» 
 						</p>
 						<h2>
-							Tattos im Trend
+							Tattoos im Trend
 						</h2>
 						<p>
-							Tattly trifft den Nerv der Zeit. Tattoos liegen im Trend. In Zeiten des gelebten und zur Schau gestellten Individualismus, des gesteigerten Mitteilungs- und Geltungsbedürfnisses sind sie zum kollektiven Stilmittel und massentauglichen Accessoire geworden. Der Hipster in Brooklyn trägt ebenso eins wie die Strandnixe an der Copacabana oder der Familienvater in Zürich Wipkingen. Gleichzeitig scheuen wir uns mehr und mehr vor Verbindlichkeit. Mit dem Mantra «Alle Optionen offenhalten, denn es könnte ja noch etwas Besseres kommen» lassen sich Tattoos allerdings nur schlecht vereinbaren. Schliesslich sind wir keine Reptilien. Ist die Farbe erst einmal unter der Haut, läuft man Gefahr, sich eines Tages grün und blau zu ärgern.
+							<i>Tattly</i> trifft den Nerv der Zeit. Tattoos liegen im Trend. In Zeiten des gelebten und zur Schau gestellten Individualismus, des gesteigerten Mitteilungs- und Geltungsbedürfnisses sind sie zum kollektiven Stilmittel und massentauglichen Accessoire geworden. Der Hipster in Brooklyn trägt ebenso eins wie die Strandnixe an der Copacabana oder der Familienvater in Zürich Wipkingen. Gleichzeitig scheuen wir uns mehr und mehr vor Verbindlichkeit. Mit dem Mantra «Alle Optionen offenhalten, denn es könnte ja noch etwas Besseres kommen» lassen sich Tattoos allerdings nur schlecht vereinbaren. Schliesslich sind wir keine Reptilien. Ist die Farbe erst einmal unter der Haut, läuft man Gefahr, sich eines Tages grün und blau zu ärgern.
 						</p>
 						<p>
-							Was kommt da gelegener als originelle, gut gestaltete Tattoos auf Zeit? Sie schonen das Budget (jedes Tattly bekommt man im Zweierset für 5 Dollar) und sind kinderleicht anzubringen: Folie abziehen, mit Bild nach unten auf die Haut legen, einen nassen Waschlappen draufdrücken. Je nach Motiv und Körperstelle halten die Bilder bis zu einer Woche. Mit dem Bedeutungsvollen und Symbolträchtigen, das sich manche auf ihrer Haut verewigt haben, können die Tattly-Tattoos nicht mithalten. Für die weniger Hartgesottenen unter uns, denen «lebenslang» zu endgültig und Abwechslung wichtig ist, bieten sie jedoch eine modische Alternative. Schmunzelfaktor und Überraschungseffekt inklusive. So lässt sich mal dies, mal das, mal da und mal dort ausprobieren.
+							Was kommt da gelegener als originelle, gut gestaltete Tattoos auf Zeit? Sie schonen das Budget (jedes <i>Tattly</i> bekommt man im Zweierset für 5 Dollar) und sind kinderleicht anzubringen: Folie abziehen, mit Bild nach unten auf die Haut legen, einen nassen Waschlappen draufdrücken. Je nach Motiv und Körperstelle halten die Bilder bis zu einer Woche. Mit dem Bedeutungsvollen und Symbolträchtigen, das sich manche auf ihrer Haut verewigt haben, können die <i>Tattly</i>-Tattoos nicht mithalten. Für die weniger Hartgesottenen unter uns, denen «lebenslang» zu endgültig und Abwechslung wichtig ist, bieten sie jedoch eine modische Alternative. Schmunzelfaktor und Überraschungseffekt inklusive. So lässt sich mal dies, mal das, mal da und mal dort ausprobieren.
 						</p>
 						<img class="pic" src="imgs/tattly.jpg">
 						<p>
-							Rund 250 Motive stehen zur Auswahl, fröhlich bunt oder klassischschwarz, tierisch verspielt oder schnörkellos cool, aussagekräftig, witzig oder ganz einfach schön. Für Kinder ist ebenso etwas dabei wie für Erwachsene. «Darauf lege ich Wert», sagt Tina Roth Eisenberg. Die Bloggerin hält stets Ausschau nach neuen Designs, die zum Denken anregen oder ein Lächeln entlocken sollen. «Oftmals stosse ich in einem Magazin oder in einem Kinderbuch auf Illustrationen die mir gefallen. Dann schreibe ich die Künstler an.» Das eine oder andere Motiv springt der «Swissmiss» auch schon mal in den Beiträgen ins Auge, die ihr für den Blog zugeschickt werden. Immer dienstags, dem «Tattly Tuesday», kommen so einige neue Sujets zum Angebot hinzu.
+							Rund 250 Motive stehen zur Auswahl, fröhlich bunt oder klassisch schwarz, tierisch verspielt oder schnörkellos cool, aussagekräftig, witzig oder ganz einfach schön. Für Kinder ist ebenso etwas dabei wie für Erwachsene. «Darauf lege ich Wert», sagt Tina Roth Eisenberg. Die Bloggerin hält stets Ausschau nach neuen Designs, die zum Denken anregen oder ein Lächeln entlocken sollen. «Oftmals stosse ich in einem Magazin oder in einem Kinderbuch auf Illustrationen die mir gefallen. Dann schreibe ich die Künstler an.» Das eine oder andere Motiv springt der <i>Swissmiss</i> auch schon mal in den Beiträgen ins Auge, die ihr für den Blog zugeschickt werden. Immer dienstags, dem <i>Tattly Tuesday</i>, kommen so einige neue Sujets zum Angebot hinzu.
 						</p>
 						<p class="quote">
 							«Ich weigere mich, in China zu produzieren, bloss weil es billiger ist.»
 						</p>
 						<p>
-							60 Künstler aus aller Welt machen bei Tattly mit. «Es ist anders, als auf Leinwand oder Papierzu zeichnen», weiss Roth Eisenberg. «Für Tattoos dürfen die Linien nicht zu fein sein, und farblich müssen die Motive in gutem Kontrast zur Haut stehen.» Von jedem Tattoo, das verkauft wird, gehen 30 Prozent des Erlöses an den Künstler. Das ist Roth Eisenberg und ihrem Team ebenso wichtig, wie die lokale Wirtschaft zu unterstützen. «Ich weigere mich, in China zu produzieren, bloss weil es billiger ist», sagt die Unternehmerin. All ihre Produkte würden in den USA hergestellt. «Mir ist klar, dass ich mit Tattly weder Weltfrieden schaffe noch Hungersnöte bekämpfe. Aber ich kann einigen Menschen Arbeit geben, Künstlern einen kleinen Verdienst ermöglichen und mit den Tattoos Freude bereiten.» Dann können wir uns jetzt ja mit gutem Gewissen der Spielerei hingeben. Weil für immer nicht besser sein muss und so ein bisschen Kinderkram noch keinem geschadet hat.
+							60 Künstler aus aller Welt machen bei <i>Tattly</i> mit. «Es ist anders, als auf Leinwand oder Papierzu zeichnen», weiss Roth Eisenberg. «Für Tattoos dürfen die Linien nicht zu fein sein, und farblich müssen die Motive in gutem Kontrast zur Haut stehen.» Von jedem Tattoo, das verkauft wird, gehen 30 Prozent des Erlöses an den Künstler. Das ist Roth Eisenberg und ihrem Team ebenso wichtig, wie die lokale Wirtschaft zu unterstützen. «Ich weigere mich, in China zu produzieren, bloss weil es billiger ist», sagt die Unternehmerin. All ihre Produkte würden in den USA hergestellt. «Mir ist klar, dass ich mit <i>Tattly</i> weder Weltfrieden schaffe noch Hungersnöte bekämpfe. Aber ich kann einigen Menschen Arbeit geben, Künstlern einen kleinen Verdienst ermöglichen und mit den Tattoos Freude bereiten.» Dann können wir uns jetzt ja mit gutem Gewissen der Spielerei hingeben. Weil für immer nicht besser sein muss und so ein bisschen Kinderkram noch keinem geschadet hat.
 						</p>
 					</div>
 					<div class="marginalie-mobile">
-						<p>
-							<b>Temporäre Tättowierung</b> erschien <br> am 26. August 2012 im <i>Stil</i>-Magazin der <i>NZZ am Sonntag</i>.
-						</p>
-						<p>
+						<div class="border">
+						</div>
+						<span>
+							<b>Temporäre Tättowierung</b> erschien am 26. August 2012 im <i>Stil</i>-Magazin der <i>NZZ am Sonntag</i>.
+						</span>
+						<span class="span-shlash"> // 
+						</span>
+						<span>
 							Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
-						</p>
-					</div>
-					<div class="follow-up">
-						<div>Mehr lesen?</div>
-						<p><a class="previous" href="portfolio_boxen.html">Ring frei für alle</a></p>
-						<p><a class="next" href="portfolio_self.html">Wohnen in einer Wundertüte</a></p>
+						</span>
 					</div>
 				</section>
 			</article>
+			<div class="follow-up">
+				<div>Mehr lesen?</div>
+				<p><a class="previous" href="portfolio_boxen.html">Ring frei für alle</a></p>
+				<p><a class="next" href="portfolio_self.html">Wohnen in einer Wundertüte</a></p>
+			</div>
 		</div>
 	</div>
 	<footer>
 		<p>
 			© 2014 Content and Webdesign by Isabel Plana</p>
 			<a href="https://twitter.com/iPlana"><img class="contact" src="imgs/Twitter_logo_white.png"></a>
-			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.svg"></a>
+			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.png"></a>
 	</footer>
 </body>
 </html>

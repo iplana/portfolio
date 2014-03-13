@@ -9,9 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="home.css">
 	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+			$(window).scroll(function(e) {
+			    var s = $(window).scrollTop();
+			    var opacityVal = 1 - (s / header);
+			    $('header').css('opacity', opacityVal);
+			});
+		})
+	</script>
 
 	<header id="header-home">
 	</header>
@@ -26,7 +37,7 @@
 
 	<div class="content">
 		<h1>
-			Hello!
+			Hallo Welt!
 		</h1>
 		<div class="article-wrap">
 			<article>
@@ -40,7 +51,7 @@
 		<p>
 			© 2014 Content and Webdesign by Isabel Plana</p>
 			<a href="https://twitter.com/iPlana"><img class="contact" src="imgs/Twitter_logo_white.png"></a>
-			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.svg"></a>
+			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.png"></a>
 	</footer>
 </body>
 </html>

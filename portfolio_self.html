@@ -13,7 +13,16 @@
 </head>
 
 <body>
-
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+			$(window).scroll(function(e) {
+			    var s = $(window).scrollTop();
+			    var opacityVal = 1 - (s / header);
+			    $('header').css('opacity', opacityVal);
+			});
+		})
+	</script>
 	<header id="header-self">
 	</header>
 
@@ -31,8 +40,10 @@
 		</h1>
 		<div class="article-wrap">
 			<article>
-				<aside class="metainfos">
+				<aside class="marginalie">
 					<div>
+						<div class="border">
+						</div>
 						<p>
 							<b>Wohnen in einer Wundertüte</b> erschien am 26. Februar 2010 im <i>Glattaler</i>.
 						</p>
@@ -59,7 +70,7 @@
 							«Die Raumzelle produziert ihren Strom selbst.» Zimmermann deutet auf das Dach, welches mit Fotovoltaikzellen ausgestattet ist. «Während rund neun Monaten kann damit aus dem Sonnenlicht Energie gewonnen werden.» Was aber passiert im Winter mit der Stromversorgung?
 						</p>
 						<p>
-							«Das Problem besteht darin, den produzierten Strom zu speichern», sagt Zimmermann. Er zeigt auf die zwei gut ein Meter langen Batterien, die unter dem Kajütenbett angebracht sind. «Das sind Lithium-Ionen-Batterien, wie sie auch für Handys  eingesetzt werden. Nur eben viel grösser», erklärt der Forscher. Der Vorteil gegenüber konventionellen Bleibatterien: Sie sind wesentlich kompakter und entladen sich bei Nichtgebrauch kaum. «Im Sommer erzeugen die Fotovoltaikzellen mehr Strom, als für den unmittelbaren Verbrauch benötigt wird. Mit den Batterien lässt sich dieser Überschussstrom für den Winter speichern.» 
+							«Das Problem besteht darin, den produzierten Strom zu speichern», sagt Zimmermann. Er zeigt auf die zwei gut ein Meter langen Batterien, die unter dem Kajütenbett angebracht sind. «Das sind Lithium-Ionen-Batterien, wie sie auch für Handys  eingesetzt werden. Nur eben viel grösser.» Der Vorteil gegenüber konventionellen Bleibatterien: Sie sind wesentlich kompakter und entladen sich bei Nichtgebrauch kaum. «Im Sommer erzeugen die Fotovoltaikzellen mehr Strom, als für den unmittelbaren Verbrauch benötigt wird. Mit den Batterien lässt sich dieser Überschussstrom für den Winter speichern», erklärt der Forscher. 
 						</p>
 						</p>
 						<h2>
@@ -87,37 +98,31 @@
 						</p>
 					</div>
 					<div class="marginalie-mobile">
-						<p>
+						<div class="border">
+						</div>
+						<span>
 							<b>Wohnen in einer Wundertüte</b> erschien am 26. Februar 2010 im <i>Glattaler</i>.
-						</p>
-						<p>
-							Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
-						</p>
-					</div>
-					<div class="follow-up">
-						<div>Mehr lesen?</div>
-						<p><a class="previous" href="portfolio_boxen.html">Ring frei für alle</a></p>
-						<p><a class="next" href="portfolio_tattly.html">Temporäre Tättowierung</a></p>
-					</div>
+						</span>
+						<span class="span-shlash"> // 
+						</span>
+						<span>
+							Bilder: <a href="http://www.empa.ch">Empa</a>
+						</span>
+					</div>	
 				</section>
 			</article>
+			<div class="follow-up">
+				<div>Mehr lesen?</div>
+				<p><a class="previous" href="portfolio_boxen.html">Ring frei für alle</a></p>
+				<p><a class="next" href="portfolio_tattly.html">Temporäre Tättowierung</a></p>
+			</div>
 		</div>
 	</div>
 	<footer>
 		<p>
 			© 2014 Content and Webdesign by Isabel Plana</p>
 			<a href="https://twitter.com/iPlana"><img class="contact" src="imgs/Twitter_logo_white.png"></a>
-			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.svg"></a>
+			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.png"></a>
 	</footer>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			var header = $("header").height();
-			$(window).scroll(function(e) {
-			    var s = $(window).scrollTop();
-			    var opacityVal = 1 - (s / header);
-			    $('header').css('opacity', opacityVal);
-			});
-		})
-	</script>
 </body>
 </html>

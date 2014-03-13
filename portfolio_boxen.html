@@ -8,30 +8,50 @@
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<link rel="stylesheet" type="text/css" href="boxen.css">
 	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>s
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
 <body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+			$(window).scroll(function(e) {
+			    var s = $(window).scrollTop();
+			    var opacityVal = 1 - (s / header);
+			    $('header').css('opacity', opacityVal);
+
+			    if($(window).scrollTop() > header - 50){
+					$('#navbar').addClass('navbar-visible');
+				}
+				else {
+                    $('#navbar').removeClass('navbar-visible');
+                }
+			});
+		})
+	</script>
+
+	<div id="navbar">
+		<span>home</span>
+		<span>artikel</span>
+		<span>blablabla</span>
+	</div>
 
 	<header id="header-boxen">
 	</header>
 
-	<nav>
-		<a class="button" href=""><img src="icons/icon_30468.svg">
-			<ul class="menu">
-				<li>Hello</li>
-			</ul>
-		</a>
-	</nav>
 
 	<div class="content">
 		<h1>
 			RING FREI FÜR ALLE
 		</h1>
+		
 		<div class="article-wrap">
 			<article>
-				<aside class="metainfos">
+				<aside class="marginalie">
 					<div>
+						<div class="border">
+						</div>
 						<p>
 							<b>Ring frei für alle</b> erschien im Mai 2013 im Magazin FAN, einer Bachelor-Arbeit an der Zürcher Hochschule der Künste.
 						</p>
@@ -55,7 +75,7 @@
 							«Das hier ist anders. Kein Milieu, keine Proleten und Prügelknaben.»
 						</p>
 						<p>
-							Wer hier trainiert, will sich nicht schlagen. Anders als beim Amateur- und Profiboxen geht es in fitnessorientierten Boxclubs nicht um Punkte im Ring, um Siege über Gegner. Gekämpft wird höchstens gegen den inneren Schweinehund. Die Haken und Geraden sind für die Luft bestimmt oder den Sandsack. Und wenn bei der Partnerübung tatsächlich einmal etwas ins Auge geht, entschuldigt man sich eher, statt nochmals draufzuhalten. Boxen light, Boxen für Zivilisierte. «Ich wäre nie einem Boxverein beigetreten – wegen des schlechten Rufs», sagt Holger, noch etwas ausser Atem von der letzten Schattenboxrunde. «Das hier ist anders. Kein Milieu, keine Proleten und Prügelknaben.»
+							Wer hier trainiert, will sich nicht schlagen. Anders als beim Amateur- und Profiboxen geht es in fitnessorientierten Boxclubs nicht um Punkte im Ring, um Siege über Gegner. Gekämpft wird höchstens gegen den inneren Schweinehund. Die Haken und Geraden sind für die Luft bestimmt oder den Sandsack. Und wenn bei der Partnerübung tatsächlich einmal etwas ins Auge geht, entschuldigt man sich eher, als nochmals draufzuhalten. Boxen light, Boxen für Zivilisierte. «Ich wäre nie einem Boxverein beigetreten – wegen des schlechten Rufs», sagt Holger, noch etwas ausser Atem von der letzten Schattenboxrunde. «Das hier ist anders. Kein Milieu, keine Proleten und Prügelknaben.»
 						</p>
 						<h2>
 							Würstchen und Kuchen statt Schweiss und Blut
@@ -110,27 +130,29 @@
 						</p>
 					</div>
 					<div class="marginalie-mobile">
-						<p>
+						<div class="border">
+						</div>
+						<span>
 							<b>Ring frei für alle</b> erschien im Mai 2013 im Magazin FAN, einer Bachelor-Arbeit an der Zürcher Hochschule der Künste.
-						</p>
-						<p>
-							Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
-						</p>
-					</div>
-					<div class="follow-up">
-						<div>Mehr lesen?</div>
-						<p><a class="previous" href="portfolio_self.html">Wohnen in einer Wundertüte</a></p>
-						<p><a class="next" href="portfolio_tattly.html">Temporäre Tättowierung</a></p>
+						</span>
+						<span class="span-shlash"> // </span>
+						<span>Bilder: <a href="http://florianschulz.info">Florian Schulz</a>
+						</span>
 					</div>
 				</section>
 			</article>
+			<div class="follow-up">
+				<div>Mehr lesen?</div>
+				<p><a class="previous" href="portfolio_self.html">Wohnen in einer Wundertüte</a></p>
+				<p><a class="next" href="portfolio_tattly.html">Temporäre Tättowierung</a></p>
+			</div>
 		</div>
 	</div>	
 	<footer>
 		<p>
 			© 2014 Content and Webdesign by Isabel Plana</p>
 			<a href="https://twitter.com/iPlana"><img class="contact" src="imgs/Twitter_logo_white.png"></a>
-			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.svg"></a>
+			<a href="mailto:mail@isabelplana.com"><img class="contact" src="imgs/mail.png"></a>
 	</footer>
 </body>
 </html>

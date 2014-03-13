@@ -7,25 +7,27 @@ body {
 	font-family: "ff-tisa-web-pro", Georgia, serif;
 	font-size: 18px;
 	color: black;
+	line-height: 1.6;
 	background-color: black;
 }
 
-nav	{
-	position: absolute;
-	top: 5%;
-	left: 5%;
+#navbar {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	top:0;
+	background-color: black;
 	color: white;
-	font: 150% "myriad-pro-semi-condensed", Helvetica, sans-serif;
-	background-color: black;
+	opacity: 0;
+	-webkit-transition: opacity 0.7s;
+	-moz-transition: opacity 0.7s;
+}
+.navbar-visible {
+	opacity: 0.8 !important;
 }
 
-.menu {
-	display: none;
-	font-size: 30px;
-}
-
-.button:hover .menu {
-	display: block;
+li {
+	float: left;
 }
 
 header {
@@ -58,7 +60,7 @@ article {
 	width: 100%;
 	overflow: hidden;
 	margin: 0px auto;
-	padding: 50px 0;
+	padding: 3em 0;
 	max-width: 1500px;
 	
 }
@@ -75,24 +77,26 @@ h2 {
 }
 
 p {
-	margin-top: 0.8em;
-	margin-bottom: 0.8em;
+	margin-bottom: 1.2em;
 }
 
-.metainfos {
+.marginalie {
 	position: relative;
 	width: 20%;
 	min-width: 200px;
-	height: 100%;
 	float: left;
 	margin-right: 5%;
 	padding-left: 30px;
+	padding-top: 5px;
+	opacity: 0.5;
 	font: 100% "myriad-pro-semi-condensed", Helvetica, sans-serif;
 }
 
+.marginalie p {
+	margin-top: 0;
+}
 .artikel {
 	width: 50%;
-	line-height: 1.6;
 	float: left;
 }
 
@@ -151,8 +155,18 @@ p {
 
 .marginalie-mobile {
 	display: none;
+	float: none;
+	margin-top: 2em;
 	opacity: 0.5;
 	font: 90% "myriad-pro-semi-condensed", Helvetica, sans-serif; 
+}
+.border {
+	width: 20%;
+	border-top: 1px solid;
+	padding-bottom: 12px;
+}
+.span-shlash {
+	padding: 0 5px;
 }
 
 footer {
@@ -160,12 +174,12 @@ footer {
 	clear: both;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	background-color: black;
 	color: white;
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 18px;
+	padding-top: 1.2em;
+	padding-bottom: 1em;
 	font: 90% "myriad-pro-semi-condensed", Helvetica, sans-serif;
 }
 
@@ -191,11 +205,14 @@ footer {
 	h1 {
 		height: 80px;
 	}
-	.metainfos {
+	article {
+		padding-top: 2em;
+	}
+	.marginalie {
 		display: none;
 	}
 
-	.artikel, .marginalie-mobile {
+	.artikel {
 		float: none;
 		width: 90%;
 		padding-left: 5%;
@@ -211,7 +228,11 @@ footer {
 	.marginalie-mobile {
 		display: block;
 	}
+	footer {
+		height: 80px;
+	}
 }
+
 @media (min-width: 569px) and (max-width: 768px) {
 	body {
 		font-size: 17px;
@@ -225,10 +246,10 @@ footer {
 	h1 {
 		height: 100px;
 	}
-	.metainfos {
+	.marginalie {
 		display: none;
 	} 
-	.artikel, .marginalie-mobile {
+	.artikel {
 		float: none;
 		width: 80%;
 		padding-left: 10%;
