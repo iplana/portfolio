@@ -21,7 +21,7 @@
 			    var opacityVal = 1 - (s / header);
 			    $('header').css('opacity', opacityVal);
 
-			    if($(window).scrollTop() > header - 50){
+			    if($(window).scrollTop() > header - 100){
 					$('#navbar').addClass('navbar-visible');
 				}
 				else {
@@ -31,11 +31,29 @@
 		})
 	</script>
 
-	<div id="navbar">
-		<span>home</span>
-		<span>artikel</span>
-		<span>blablabla</span>
-	</div>
+	<nav id="navbar">
+		<ul>
+			<li class="menu-home"><a href="portfolio_home.html">Home</a>
+			</li>
+			<li class="menu-artikel"><a href="">Artikel
+				<ul class="artikel-liste">
+					<li>
+						Ring frei für alle
+					</li>
+					<li>
+						<a href="portfolio_tattly.html">Temporäre Tättowierung</a>
+					</li>
+					<li>
+						<a href="portfolio_self.html">Wohnen in einer Wundertüte</a>
+					</li>
+				</ul>
+			</a>
+				
+			</li> 
+		</ul>
+		<img src="imgs/pfeil-hoch.png">
+		<img src="imgs/pfeil-tief.png">
+	</nav>
 
 	<header id="header-boxen">
 	</header>
