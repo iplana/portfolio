@@ -9,12 +9,22 @@ body {
 	color: black;
 	line-height: 1.6;
 	background-color: black;
+	-webkit-font-smoothing: antialiased;
 }
 
+.menu-button {
+	position: fixed;
+	top: 20px;
+	padding-left: 2%;
+	z-index: 500;
+}
+.menu-button:hover #navbar {
+	opacity: 1;
+}
 #navbar {
 	position: fixed;
 	width: 100%;
-
+	z-index: 100;
 	top:0;
 	background-color: black;
 	color: white;
@@ -26,11 +36,21 @@ body {
 .navbar-visible {
 	opacity: 0.9 !important;
 }
-.menu-home, .menu-artikel {
+.menu {
+	list-style-type: none;
+}
+.menu-home, .menu-artikel, .menu-pfeil {
 	width: 100px;
-	padding: 10px 10px;
+	padding: 15px 5px;
 	float: left;
-    list-style-type: none;
+}
+.menu-pfeil {
+	width: 30px;
+	float: right;
+}
+.pfeil-nav {
+	height: 1em; 
+	vertical-align: -10%;
 }
 .artikel-liste {
 	display: none;
@@ -42,7 +62,6 @@ body {
 }
 .menu-artikel:hover .artikel-liste {
 	display: block;
-	z-index: 1;
 }
 
 header {
