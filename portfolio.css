@@ -16,7 +16,7 @@ body {
 	position: fixed;
 	top: 20px;
 	padding-left: 2%;
-	z-index: 500;
+	z-index: 200;
     cursor: pointer;
 }
 .menu-button:hover #navbar {
@@ -41,14 +41,18 @@ body {
 	list-style-type: none;
     margin-left: 5%; 
 }
-.menu-home, .menu-artikel, .menu-pfeil {
-	width: 100px;
-	padding: 15px 5px;
+.menu-home, .menu-artikel {
+	padding: 15px 3% 15px 0;
 	float: left;
 }
 .menu-pfeil {
-	width: 30px;
+	padding: 15px 2% 15px 1%;
 	float: right;
+}
+.menu-triangle {
+	padding-left: 5px;
+	font-size: 60%;
+	vertical-align: 20%;
 }
 .pfeil-nav {
 	height: 1em; 
@@ -98,7 +102,6 @@ article {
 	margin: 0px auto;
 	padding: 3em 0;
 	max-width: 1500px;
-
 }
 
 a {
@@ -232,6 +235,20 @@ footer {
 	body {
 		font-size: 16px;
 	}
+	.menu {
+    	margin-left: 8%; 
+	}
+	.menu-home, .menu-artikel {
+		padding: 15px 4% 15px 0;
+		float: left;
+	}
+	.menu-pfeil {
+		padding: 15px 5%;
+	}
+	.pfeil-nav {
+		height: 0.9em;
+		vertical-align: -8%;
+	} 
 	header {
 		height: 290px;
 	}

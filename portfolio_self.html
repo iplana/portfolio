@@ -16,23 +16,57 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			var header = $("header").height();
+
+            // Show / hide navigation when mouse hovers over menu button
+            $('.menu-button').on('click', function () {
+                $('#navbar').addClass('navbar-visible');
+            });
+
 			$(window).scroll(function(e) {
 			    var s = $(window).scrollTop();
 			    var opacityVal = 1 - (s / header);
 			    $('header').css('opacity', opacityVal);
+
+			    if($(window).scrollTop() > header - 100){
+					$('#navbar').addClass('navbar-visible');
+				}
+				else {
+                    $('#navbar').removeClass('navbar-visible');
+                }
 			});
 		})
 	</script>
+
+	<div class="menu-button">
+        <a><img src="imgs/menu.png" />
+        </a>
+    </div>
+	<nav id="navbar">
+        <ul class="menu">
+            <li class="menu-home"><a href="portfolio_home.html">Home</a>
+            </li>
+            <li class="menu-artikel">  
+                <a href="">Artikel <span class="menu-triangle">▾</span>
+                    <ul class="artikel-liste">
+                        <li>
+                        	Ring frei für alle
+                        </li>
+                        <li>
+                        	<a href="portfolio_tattly.html">Temporäre Tättowierung</a>
+                        </li>
+                        <li>
+                        	<a href="portfolio_self.html">Wohnen in einer Wundertüte</a>
+                        </li>
+                    </ul>
+                </a>
+            </li>
+            <span class="menu-pfeil"><a href="portfolio_boxen.html"><img class="pfeil-nav" src="imgs/pfeil-rechts.png"></a></span>
+            <span class="menu-pfeil"><a href="portfolio_tattly.html"><img class="pfeil-nav" src="imgs/pfeil-links.png"></a></span>
+        </ul>
+    </nav>
+
 	<header id="header-self">
 	</header>
-
-	<nav>
-		<a class="button" href=""><img src="icons/icon_30468.svg">
-			<ul class="menu">
-				<li>Hello</li>
-			</ul>
-		</a>
-	</nav>
 
 	<div class="content">
 		<h1>
