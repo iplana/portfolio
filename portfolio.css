@@ -17,6 +17,7 @@ body {
 	top: 20px;
 	padding-left: 2%;
 	z-index: 500;
+    cursor: pointer;
 }
 .menu-button:hover #navbar {
 	opacity: 1;

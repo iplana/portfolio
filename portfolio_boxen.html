@@ -17,6 +17,11 @@
 		$(document).ready(function(){
 			var header = $("header").height();
 
+            // Show / hide navigation when mouse hovers over menu button
+            $('.menu-button').on('click', function () {
+                $('#navbar').addClass('navbar-visible');
+            });
+
 			$(window).scroll(function(e) {
 			    var s = $(window).scrollTop();
 			    var opacityVal = 1 - (s / header);
@@ -24,28 +29,16 @@
 
 			    if($(window).scrollTop() > header - 100){
 					$('#navbar').addClass('navbar-visible');
-
-                    // Don’t Show / hide navigation when mouse hovers over menu button
-                    $('.menu-button').off('mouseenter');
-                    $('.menu-button').off('mouseleave');
 				}
 				else {
                     $('#navbar').removeClass('navbar-visible');
-
-                    // Show / hide navigation when mouse hovers over menu button
-                    $('.menu-button').on('mouseenter', function () {
-                        $('#navbar').addClass('navbar-visible');
-                    });
-                    $('.menu-button').on('mouseleave', function () {
-                        $('#navbar').removeClass('navbar-visible');
-                    });
                 }
 			});
 		})
 	</script>
 
     <div class="menu-button">
-        <a href=""><img src="imgs/menu.png" />
+        <a><img src="imgs/menu.png" />
         </a>
     </div>
 	<nav id="navbar">
