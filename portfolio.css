@@ -38,6 +38,7 @@ body {
 }
 .menu {
 	list-style-type: none;
+    margin-left: 5%; 
 }
 .menu-home, .menu-artikel, .menu-pfeil {
 	width: 100px;
