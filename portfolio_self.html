@@ -18,9 +18,12 @@
 			var header = $("header").height();
 
             // Show / hide navigation when mouse hovers over menu button
-            $('.menu-button').on('click', function () {
+            $('.menu-button').hover(function () {
                 $('#navbar').addClass('navbar-visible');
-            });
+            	});
+            $('#navbar').mouseleave(function () {
+            	$('#navbar').removeClass('navbar-visible');
+            	});
 
 			$(window).scroll(function(e) {
 			    var s = $(window).scrollTop();
@@ -49,13 +52,13 @@
                 <a href="">Artikel <span class="menu-triangle">▾</span>
                     <ul class="artikel-liste">
                         <li>
-                        	Ring frei für alle
+                        	<a href="portfolio_boxen.html">Ring frei für alle</a>
                         </li>
                         <li>
                         	<a href="portfolio_tattly.html">Temporäre Tättowierung</a>
                         </li>
                         <li>
-                        	<a href="portfolio_self.html">Wohnen in einer Wundertüte</a>
+                        	Wohnen in einer Wundertüte
                         </li>
                     </ul>
                 </a>
@@ -163,7 +166,7 @@
 		</div>
 	</div>
 	<footer>
-		<p>© 2014 Content and Webdesign by Isabel Plana</p>
+		<p>© 2014 Created by Isabel Plana</p>
 		<div class="contact">
 				<a class="contact-twitter" href="https://twitter.com/iPlana">
 					<img class="icon twitter" src="imgs/Twitter_logo_white.png">

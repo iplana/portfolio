@@ -18,9 +18,12 @@
 			var header = $("header").height();
 
             // Show / hide navigation when mouse hovers over menu button
-            $('.menu-button').on('click', function () {
+            $('.menu-button').hover(function () {
                 $('#navbar').addClass('navbar-visible');
-            });
+            	});
+            $('#navbar').mouseleave(function () {
+            	$('#navbar').removeClass('navbar-visible');
+            	});
 
 			$(window).scroll(function(e) {
 			    var s = $(window).scrollTop();
@@ -37,9 +40,15 @@
 		})
 	</script>
 
-	<div class="menu-button">
-        <a><img src="imgs/menu.png" />
-        </a>
+	<div class="menu-wrap">
+		<div class="menu-button">
+    	    <a><img src="imgs/menu.png" />
+    	    </a>
+    	</div>
+    	<div class="menu-pfeil">
+    		<span><a href="portfolio_boxen.html"><img class="pfeil-nav" src="imgs/pfeil-rechts.png"></a></span>
+    		<span><a href="portfolio_self.html"><img class="pfeil-nav" src="imgs/pfeil-links.png"></a></span>
+    	</div>
     </div>
 	<nav id="navbar">
         <ul class="menu">
@@ -49,7 +58,7 @@
                 <a href="">Artikel <span class="menu-triangle">▾</span>
                     <ul class="artikel-liste">
                         <li>
-                        	Ring frei für alle
+                        	<a href="portfolio_boxen.html">Ring frei für alle</a>
                         </li>
                         <li>
                         	<a href="portfolio_tattly.html">Temporäre Tättowierung</a>
@@ -60,10 +69,9 @@
                     </ul>
                 </a>
             </li>
-            <span class="menu-pfeil"><a href="portfolio_boxen.html"><img class="pfeil-nav" src="imgs/pfeil-rechts.png"></a></span>
-            <span class="menu-pfeil"><a href="portfolio_self.html"><img class="pfeil-nav" src="imgs/pfeil-links.png"></a></span>
         </ul>
     </nav>
+    
 
 	<header id="header-home">
 	</header>
@@ -74,14 +82,49 @@
 		</h1>
 		<div class="article-wrap">
 			<article>
-				<div class="text">
+				<div class="home-text">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ullamcorper est sed erat convallis, eu lacinia nibh convallis. Phasellus hendrerit lorem in adipiscing mattis. Cras ullamcorper sapien in aliquam commodo. Praesent pulvinar neque eu tortor facilisis, vel elementum eros egestas. Fusce hendrerit, mauris sed elementum ultrices, erat justo sollicitudin purus, id placerat enim eros tempor sapien. Etiam posuere mauris sed magna venenatis, et mollis nisl luctus. Sed ornare massa sed varius malesuada. Sed tristique in urna pharetra imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In hac habitasse platea dictumst. Praesent risus mauris, rutrum auctor ligula ut, adipiscing varius libero. 
 				</div>
 			</article>
 		</div>
 	</div>
+
+	<div class="teaser-bar">
+		<div class="teaser-tab">
+			<span>
+				Lust zu lesen?
+			</span>
+		</div>
+		<div class="teaser-wrap">
+			<div class="teaser">
+				<a href="portfolio_boxen.html">
+					<div class="bild teaser-boxen"></div>
+					<h3>Ring frei für alle</h3>
+					<div class="divline"></div>
+					<p>sdc s sduch isd soducgsid c</p>
+				</a>
+			</div>
+			<div class="teaser">
+				<a href="portfolio_tattly.html">
+					<div class="bild teaser-tattly"></div>
+					<h3>Temporäre Tättowierung</h3>
+					<div class="divline"></div>
+					<p>bdsizcg sdcisud cisugd csd czsgd c</p>
+				</a>
+			</div>
+			<div class="teaser">
+				<a href="portfolio_self.html">
+					<div class="bild teaser-self"></div>
+					<h3>Wohnen in einer Wundertüte</h3>
+					<div class="divline"></div>
+					<p>sdic sdiuohc sducih sdizcg sdc</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
 	<footer>
-		<p>© 2014 Content and Webdesign by Isabel Plana</p>
+		<p>© 2014 Created by Isabel Plana</p>
 		<div class="contact">
 				<a class="contact-twitter" href="https://twitter.com/iPlana">
 					<img class="icon twitter" src="imgs/Twitter_logo_white.png">

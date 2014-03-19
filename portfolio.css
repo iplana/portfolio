@@ -12,15 +12,58 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+/* Styling of navigation */
+
+.menu-wrap {
+	width: 100%;
+	height: 60px;
+}
 .menu-button {
 	position: fixed;
 	top: 20px;
-	padding-left: 2%;
+	left: 25px;
 	z-index: 200;
     cursor: pointer;
 }
-.menu-button:hover #navbar {
+.menu-pfeil {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 200;
+    cursor: pointer;
+    float: right;
+   
+}
+.menu-pfeil-rechts, 
+.menu-pfeil-links {
+	position: relative;
+	margin: 0 5px;
+	width: 12px;
+
+}
+.pfeil {
+	position: absolute;
+	top: 0;
+}
+.pfeil-rechts-hover, 
+.pfeil-links-hover {
+	opacity: 0;
+}
+.menu-pfeil-rechts:hover .pfeil-rechts,
+.menu-pfeil-links:hover .pfeil-links {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+}
+.menu-pfeil-rechts:hover .pfeil-rechts-hover,
+.menu-pfeil-links:hover .pfeil-links-hover{
 	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+}
+
+#navbar:hover .menu {
+	display: block;
 }
 #navbar {
 	position: fixed;
@@ -56,7 +99,7 @@ body {
 .artikel-liste {
     width: 200px;
     position: absolute;
-    background: #222A34;
+    background-color: #222A34;
     list-style-type: none;
     padding: 10px 20px 30px 20px;
     font-size: 100%;
@@ -83,36 +126,9 @@ body {
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 }
-.menu-pfeil {
-	padding: 15px 2% 15px 1%;
-	float: right;
-}
-.menu-pfeil-rechts, 
-.menu-pfeil-links {
-	position: relative;
-	width: 40px;
-	height: 50px;
-}
-.arrow {
-	position: absolute;
-	top: 0;
-}
-.pfeil-rechts-hover, 
-.pfeil-links-hover {
-	opacity: 0;
-}
-.menu-pfeil-rechts:hover .pfeil-rechts,
-.menu-pfeil-links:hover .pfeil-links {
-	opacity: 0;
-	-webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-}
-.menu-pfeil-rechts:hover .pfeil-rechts-hover,
-.menu-pfeil-links:hover .pfeil-links-hover{
-	opacity: 1;
-	-webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
-}
+
+/* Styling of header image */
+
 header {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -123,6 +139,104 @@ header {
 	width: 100%;
 	height: 700px;
 	}
+
+/* Styling of home page text */
+
+.home-text {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.teaser-tab {
+	background-color: white;
+	color: #808080;
+	font: 100% "myriad-pro-semi-condensed", Helvetica, sans-serif;
+	text-align: center;
+}
+.teaser-tab span {
+	position: relative;
+	display: inline-block;
+	background-color: #E8E8E8;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.teaser-bar {
+	width: 100%;
+	background-color: #E8E8E8;
+	text-align: center;
+}
+.teaser-wrap {
+	position: relative;
+	display: inline-block;
+	margin: 20px 0;
+
+}
+.teaser {
+	position: relative;
+	width: 280px;
+	min-height: 360px;
+	margin: 20px 20px;
+	float: left;
+	background-color: white;
+	text-align: left;
+	color: black;
+}
+.bild {
+	display: block;
+	width: 100%;
+	height: 180px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.8;
+}
+.teaser-boxen {
+	background-image: url(imgs/boxen_teaser.jpg);
+}
+.teaser-tattly {
+	background-image: url(imgs/tattly_teaser.jpg);
+}
+.teaser-self {
+	background-image: url(imgs/self_teaser.jpg);
+}
+h3 {
+	display: table-cell;
+	vertical-align: middle;
+	width: 280px;
+	height: 60px;
+	padding: 20px 25px 10px 25px;
+	font-size: 95%;
+	text-align: center;
+	line-height: 1.4;
+}
+
+.divline {
+	width: 10%;
+	height: 2px;
+	margin: 0 auto;
+	border-top: 2px solid #808080;
+	opacity: 0.5;
+}
+.teaser p {
+	margin-bottom: 0;
+	padding: 20px 30px;
+	font-size: 90%;
+	line-height: 1.2;
+}
+.teaser:hover .bild {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+}
+.teaser-active .bild {
+	opacity: 1;
+}
+
+
+/* Styling of article's page text */
 
 .content {
 	margin-top: 500px;
@@ -139,6 +253,7 @@ h1 {
 	background-color: white;
 	margin: 0 auto;
 }
+
 article {
 	width: 100%;
 	overflow: hidden;
@@ -212,6 +327,7 @@ p {
 	float: none;
 }
 
+/* Styling of marginalie for mobile */
 
 .marginalie-mobile {
 	display: none;
@@ -230,13 +346,14 @@ p {
 	padding: 0 5px;
 }
 
+/* Styling of footer */
+
 footer {
 	position: relative;
 	clear: both;
 	bottom: 0;
 	width: 100%;
 	height: 80px;
-	
 	background-color: #222A34;
 	color: white;
 	text-align: center;
@@ -280,7 +397,7 @@ footer {
     -moz-transition: opacity 0.3s;
 }
 
-/* Behaviour with varying window size */
+/* Responsivness */
 
 
 

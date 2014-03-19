@@ -8,7 +8,6 @@ h1 {
 h2 {
 	font: 180% "league-gothic", Arial, sans-serif;
 	}
-
 /* Behaviour with varying window size */
 
 @media (min-device-width:320px) and (max-device-width: 568px) {
