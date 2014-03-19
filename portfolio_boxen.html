@@ -21,7 +21,7 @@
             $('.menu-button').hover(function () {
                 $('#navbar').addClass('navbar-visible');
             	});
-            $('#navbar').mouseleave(function () {
+            $('.menu-wrap').on('mouseleave', function () {
             	$('#navbar').removeClass('navbar-visible');
             	});
 
@@ -32,9 +32,13 @@
 
 			    if($(window).scrollTop() > header - 100){
 					$('#navbar').addClass('navbar-visible');
+					$('.menu-wrap').off('mouseleave');
 				}
 				else {
                     $('#navbar').removeClass('navbar-visible');
+                    $('.menu-wrap').on('mouseleave', function () {
+            			$('#navbar').removeClass('navbar-visible');
+            		});
                 }
 			});
 		})
@@ -58,32 +62,29 @@
             		<img class="pfeil pfeil-rechts-hover" src="imgs/pfeil-rechts_mint.png">
             	</a>
             </span>
-            
         </div>
+		<nav id="navbar">
+    	    <ul class="menu">
+    	        <li class="menu-home"><a href="portfolio_home.html">Home</a>
+    	        </li>
+    	        <li class="menu-artikel">  
+    	            <a href="">Artikel <span class="menu-triangle">▾</span>
+    	                <ul class="artikel-liste">
+    	                    <li>
+    	                    	Ring frei für alle
+    	                    </li>
+    	                    <li>
+    	                    	<a href="portfolio_tattly.html">Temporäre Tättowierung</a>
+    	                    </li>
+    	                    <li>
+    	                    	<a href="portfolio_self.html">Wohnen in einer Wundertüte</a>
+    	                    </li>
+    	                </ul>
+    	            </a>
+    	        </li>
+    	    </ul>
+    	</nav>
      </div>
-
-	<nav id="navbar">
-        <ul class="menu">
-            <li class="menu-home"><a href="portfolio_home.html">Home</a>
-            </li>
-            <li class="menu-artikel">  
-                <a href="">Artikel <span class="menu-triangle">▾</span>
-                    <ul class="artikel-liste">
-                        <li>
-                        	Ring frei für alle
-                        </li>
-                        <li>
-                        	<a href="portfolio_tattly.html">Temporäre Tättowierung</a>
-                        </li>
-                        <li>
-                        	<a href="portfolio_self.html">Wohnen in einer Wundertüte</a>
-                        </li>
-                    </ul>
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
 
 
 	<header id="header-boxen">

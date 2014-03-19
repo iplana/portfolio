@@ -17,29 +17,33 @@ body {
 .menu-wrap {
 	width: 100%;
 	height: 60px;
-}
-.menu-button {
 	position: fixed;
-	top: 20px;
+	top: 0;
+}
+
+.menu-button {
+	position: relative;
 	left: 25px;
+	top: 18px;
 	z-index: 200;
     cursor: pointer;
+    width: 30px;
+    float: left;
 }
 .menu-pfeil {
-	position: fixed;
+	position: relative;
+	display: inline-block;
+	top: 18px;
 	right: 25px;
 	z-index: 200;
     cursor: pointer;
     float: right;
-    height: 60px;
 }
 .menu-pfeil-rechts, 
 .menu-pfeil-links {
 	display: inline-block;
-	position: relative;
-	margin-left: 20px;
+	margin: 0 20px;
 	width: 12px;
-
 }
 .pfeil {
 	position: absolute;
@@ -82,7 +86,7 @@ body {
 }
 .menu {
 	list-style-type: none;
-    margin-left: 5%; 
+    margin-left: 3%; 
 }
 .menu-home, 
 .menu-artikel {
@@ -135,7 +139,7 @@ header {
 	background-position: center center;
 	z-index: -1;
 	position: fixed;
-	top: -60px;
+	top: 0;
 	width: 100%;
 	height: 700px;
 	}
