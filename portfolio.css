@@ -451,6 +451,9 @@ footer {
 	.marginalie-mobile {
 		display: block;
 	}
+	.teaser-active {
+		display: none;
+	}
 	footer {
 		height: 80px;
 	}
