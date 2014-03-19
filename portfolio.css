@@ -27,7 +27,6 @@ body {
 }
 .menu-pfeil {
 	position: fixed;
-	top: 20px;
 	right: 20px;
 	z-index: 200;
     cursor: pointer;
@@ -39,6 +38,7 @@ body {
 	position: relative;
 	margin: 0 5px;
 	width: 12px;
+	display: block;
 
 }
 .pfeil {
