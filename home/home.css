@@ -1,0 +1,80 @@
+body {
+	background-color: white;
+}
+header {
+	background-image: url(header.jpg);
+	background-position: 50% 85%;
+	height: 800px; 
+}
+h1 {
+	height: 80px;
+	font-size: 300%;
+	color: black;
+	padding-top: 0.5em;
+	background-color: white;
+}
+#container-home {
+	width: 50%;
+	margin-bottom: 5%;
+	max-width: 750px;
+}
+.content {
+	margin-top: 800px;
+}
+.home-text {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/* Behaviour with varying window size */
+
+@media (max-width: 480px) {
+	header {
+		height: 300px;
+	}
+	h1 {
+		font-size: 150%;
+	}
+	.content {
+		margin-top: 300px;
+	}
+	.home-text {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	header {
+		height: 500px;
+	}
+	h1 {
+		font-size: 200%;
+	}
+	.content {
+		margin-top: 500px;
+	}
+	.home-text {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+	header {
+		height: 700px;
+	}
+	h1 {
+		font-size: 250%;
+	}
+	.content {
+		margin-top: 700px;
+	}
+}
+
+@media (min-width: 1680px) {
+	header {
+		height: 900px;
+		background-position: 50% 55%;
+	}
+	.content {
+		margin-top: 900px;
+	}

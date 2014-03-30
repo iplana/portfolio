@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html">
+	<meta name="viewport" content="width=320px, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Rioja – Im Land der kühnen Winzer</title>
+	<link rel="stylesheet" type="text/css" href="../portfolio.css">
+	<link rel="stylesheet" type="text/css" href="rioja.css">
+	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+
+            // Show / hide navigation when mouse hovers over menu button
+            $('.menu-button').hover(function () {
+                $('#navbar').addClass('navbar-visible');
+            	});
+            $('.menu-wrap').on('mouseleave', function () {
+            	$('#navbar').removeClass('navbar-visible');
+            	});
+
+           	// Remember width of article navigation so we can animate its width
+           	// var w = $(".article-navigation-text") 
+
+           	if ($(window).width() < 568){
+           		$('.drop-down-link').on('tap', function (event) {
+           			event.preventDefault();
+           			$('.article-list').toggleClass('article-list-visible')
+           		});
+           	}
+
+           	if ($(window).width() > 568){
+           		$(window).scroll(function(e) {
+			    	var s = $(window).scrollTop();
+			    	var opacityVal = 1 - (s / header);
+			    	if (opacityVal > 0) $('header').css('opacity', opacityVal);
+	
+			    	if($(window).scrollTop() > header - 60){
+						$('#navbar').addClass('navbar-visible');
+						$('.article-navigation').addClass('expanded');
+						$('.menu-wrap').off('mouseleave');
+					}
+					else {
+                	    $('#navbar').removeClass('navbar-visible');
+                	    $('.article-navigation').removeClass('expanded');
+                	    $('.menu-wrap').on('mouseleave', function () {
+            				$('#navbar').removeClass('navbar-visible');
+            			});
+                	}
+				});
+           	}
+			
+		})
+	</script>
+
+	<div class="menu-wrap">
+    	<div class="menu-button">
+    	    <a href="../home">
+    	    <i class="menu-button-icon">m</i>
+    	    <i class="menu-button-icon-hover">h</i>
+    	    </a>
+    	</div>
+    	<div class="article-navigation">
+    		<a href="../boxen-ring-frei-für-alle" class="article-navigation-link">
+            	<i class="article-navigation-icon">l</i>
+            	<span class="article-navigation-text">Ring frei für alle</span>
+            </a>
+            <span class="article-navigation-separator">|</span>
+            <a href="../self-wohnen-in-einer-wundertüte" class="article-navigation-link">
+            	<span class="article-navigation-text">Wohnen in einer Wundertüte</span>
+            	<i class="article-navigation-icon">r</i>
+            </a>
+        </div>
+		<nav id="navbar">
+    	    <ul class="menu">
+    	        <li class="menu-artikel">  
+    	            <a class="drop-down-link">Artikel<span class="menu-triangle">▾</span>
+    	                <ul class="article-list">
+    	                    <li>
+    	                    	<a href="../boxen-ring-frei-für-alle">Ring frei für alle</a>
+    	                    </li>
+    	                    <li class="article-list-active">
+    	                    	Land der kühnen Winzer
+    	                    </li>
+    	                    <li>
+    	                    	<a href="../self-wohnen-in-einer-wundertüte">Wohnen in einer Wundertüte</a>
+    	                    </li>
+    	                </ul>
+    	            </a>
+    	        </li>
+    	    </ul>
+    	</nav>
+     </div>
+
+	<header>
+	</header>
+
+	<div class="content">
+		<h1>
+			Land der kühnen Winzer
+		</h1>
+		<div class="article-wrap">
+			<article>
+				<aside class="marginalie">
+					<div>
+					<div class="border">
+					</div>
+						<p>
+							<b>Land der kühnen Winzer</b> erschien am 9. Dezember 2012 im <em>Stil</em>-Magazin der <em>NZZ am Sonntag</em>.
+						</p>
+						<p>
+							Bilder: Isabel Plana
+						</p>
+					</div>
+				</aside>
+				<section class="artikel">
+					<div class="lead">
+						Eine Reise durch die Rioja lohnt sich nicht nur der Weine wegen. Inmitten der pittoresken Hügellandschaft stehen gewagte Bauten namhafter Architekten.
+					</div>
+					<div class="text">
+						<p>
+							Wie ein Torero durch die Arena schreitet Victor Charcán anmutigen Ganges durch die Reihen der Barriques. Zu Dutzenden ruhen sie Bauch an Bauch in der lichtdurchfluteten Halle der Bodega Roda. «Die Gärung in den Eichenfässern erfordert viel Aufmerksamkeit», erzählt Charcán, Export-Chef bei Roda, und hält dann einen Moment inne. Sein Blick wandert zu den grosszügigen Fensterfronten beidseits der Halle. «Wenn wir die öffnen, strömt der Nordwind hindurch und reichert unseren Wein mit Aromen von Lavendel, Thymian und anderen Kräutern an.» Er macht eine ausladende Armbewegung, seine haselnussbraunen Augen funkeln, ein Lächeln kräuselt seine Lippen. Er weiss sich in Szene zu setzen, dieser Señor Charcán. Da könnte frau glatt vergessen, wieso sie eigentlich hier ist: des Weines wegen. 
+						</p>
+						<p>
+							Roda, eine der renommiertesten Adressen in Sachen Rioja-Wein, gehört mit Gründungsjahr 1987 zu den jüngeren Bodegas in Haro. Das Städtchen, das sich nicht zu Unrecht als «Capital del Rioja», als Hauptstadt des Riojas, bezeichnet, blickt auf eine jahrhundertealte Weinbautradition zurück. In der Altstadt sind, wie vielerorts in der Rioja, zahlreiche unterirdische Gänge und Gewölbe, sogenannte «Calados», aus dem Mittelalter erhalten, in denen der Traubensaft schon anno dazumal reifte.
+						</p>
+						<h2>
+							Dank der Eisenbahn
+						</h2>
+						<p>
+							Das eigentliche Herzstück von Haros Weinindustrie ist das «Barrio de la Estación». Nirgends auf der Welt findet man auf einem Fleck so viele – und so viele namhafte – Bodegas wie in Haros Bahnhofsviertel. Muga, Rioja Alta, López de Heredia – die Liste liest sich wie das Who is Who der Rioja-Produzenten. Sie alle haben sich in Haro seit dem Ende des 19. Jahrhunderts nicht nur die Erschliessung durch die Eisenbahn zunutze gemacht, sondern vor allem die ausgezeichneten geografischen Bedingungen für den Weinbau. 
+						</p>
+						<p>
+							Schon die französischen Winzer, die hier um 1850 Land kauften und den industriellen Weinbau in der Region vorantrieben, wussten, warum sie ihre Rebstöcke gerade hier pflanzten. Im Herzen der Rioja Alta, dem östlichen der drei Teilgebiete der Rioja gelegen, profitiert Haro vom Einfluss des atlantischen Klimas. Der von Victor Charcán beschriebene Nordwind trägt feuchte und milde Luft von der kantabrischen Küste heran. Die Schwemmböden zwischen den Mäandern des Ebros und seines Zuflusses Tirón sind kalk- und tonreich – ein idealer Untergrund für eine ertragreiche Ernte. Und diese ist im Herbst in vollem Gange.
+						</p>
+						<p>
+							Kistenweise stapeln sich die von Hand gelesenen Trauben auf dem Vorplatz der Bodega Roda. Victor Charcán klaubt sich ein paar der purpurnen Früchte und steckt sie sich in den Mund. «Zuckersüss», schwärmt er und streckt den Besuchern auch eine Handvoll entgegen. Nach der Verkostung des Rohstoffs darf man gespannt sein auf das Endprodukt. Die Degustation offenbart sodann, welch Vielfalt an Aromen sich hinter diesem simplen «zuckersüss» versteckt.
+						</p>
+						<p>
+							Doch bevor einem das rote Gold Rodas oder der Charme des Señor Charcán die Sinne raubt, ist es Zeit, aufzubrechen. Das Weinbaugebiet der Rioja ist gross – sie verfügt über rund 63 000 Hektaren Rebfläche, viermal so viel wie die Schweiz –, und es gibt eine Menge Bodegas, die es sich zu besuchen lohnt. Valenciso etwa, vielleicht einer der kühnsten Winzer der Region.
+						</p>
+						<h2>
+							Tradition modern interpretiert 
+						</h2>
+						<p>
+							Wenige Autominuten südlich von Haro taucht zwischen den sanften, von Rebzeilen-Rastern überzogenen Hügeln ein modernes Gebäude auf, das sich mit seiner schlichten Architektur und der sandfarbenen Fassade perfekt in die Landschaft fügt. Hier im kleinen Örtchen Ollauri haben sich Luís Valentin und Carmen Enciso, die jahrelang für Rioja-Grossproduzenten arbeiteten, den Traum einer eigenen Bodega verwirklicht. Aus den fast 100-jährigen Reben, die das Gebäude umgeben, keltern sie seit 1998 ihren Valenciso-Wein – und zwar genau einen Roten und einen Weissen. Bei einer schlechten Ernte droht damit ein gesamter Jahrgang komplett zu entfallen. Die wenigsten Weinproduzenten würden ein solches Risiko eingehen. Valenciso schon. Qualität vor Quantität, ist das Motto. Das Ergebnis ist eine limitierte Auflage eines unkonventionellen Tinto Reserva aus 100 Prozent Tempranillo-Trauben und eines ebenso unverwechselbaren Blanco, der sich von den sonst oft eher bescheidenen Rioja-Weissweinen abhebt.
+						</p>
+						<p>
+							So wie Valenciso sind in der Rioja in den vergangenen zehn, zwanzig Jahren viele kleinere Bodegas mit Innovationsgeist entstanden, die traditionellen und modernen Weinbau zu verbinden suchen. Auch manch grosse, alteingesessene Marke der Region hat sich kürzlich einen zeitgenössischen Anstrich verpasst.
+						</p>
+						<p>
+							Am augenscheinlichsten wird dies bei der Fahrt durch das Weingebiet: Immer wieder stechen moderne, mitunter von namhaften Architekten entworfene Bauten ins Auge. Manche sind schlichter, wie jene der Bodega Ysios von Santiago Calatrava, andere pompöser, wie das von Frank Gehry entworfene Gebäude der Bodega Marques de Riscal. So oder so setzen sie einen interessanten Kontrapunkt zu den pittoresken Dörfern, deren Kirchtürme zwischen den aneinandergebauten Steinhäusern herausragen wie die Zypressen aus den Mandel- und Olivenhainen. Besonders hübsch ist das Städtchen Biasteri im nördlichen, bergigen Teilgebiet Rioja Alavesa. Umgeben von einer mittelalterlichen Stadtmauer, erwarten einen hübsche Cafés, Vinotheken und natürlich Tapas-Bars.
+						</p>
+
+						<div class="pic-wrap">
+							<div class="caption">
+								Briones, eines der typischen riojanischen Städtchen, in denen man wunderbar heimischen Wein und herzhafte Tapas verköstigen kann.
+							</div>
+							<img class="pic" src="rioja.jpg">
+							<div class="caption-mobile">
+								Briones, eines der typischen riojanischen Städtchen, in denen man wunderbar heimischen Wein und herzhafte Tapas verköstigen kann.
+							</div>
+						</div>
+						
+						<p>
+							Wer sich den Bauch aber so richtig mit Jamón Serrano, Tortilla, Gambas und dergleichen vollschlagen will, der begibt sich in die Provinzhauptstadt Logroño. An die Calle del Laurel, die die Lorbeeren im Namen zu Recht trägt. Jedenfalls was die Tapas anbelangt. In kaum einer Strasse ist die Dichte der traditionellen Esslokale, die Hülle und Fülle der kleinen Häppchen so gross wie in dieser Altstadtgasse. Auf wenigen Metern kann man sich von einer Kneipe in die nächste schlemmen und sich mit den Einheimischen, die sich hier Abend für Abend und nie vor 21 Uhr einfinden, bei einem Glas Rioja unterhalten. Und wenn man sich später satt und trunken auf den Nachhauseweg begibt, zieht der Nordwind durch die Gassen und weht einem Lavendel und Thymian in die vom Wein gerötete Nase. 
+						</p>
+					</div>
+					<div class="marginalie-mobile">
+						<div class="border">
+						</div>
+						<span>
+							<b>Land der kühnen Winzer</b> erschien am 9. Dezember 2012 im <em>Stil</em>-Magazin der <em>NZZ am Sonntag</em>.
+						</span>
+						<span class="span-slash"> // 
+						</span>
+						<span>
+							Bilder: Isabel Plana
+						</span>
+					</div>
+				</section>
+			</article>
+		</div>
+
+	<div class="teaser-bar">
+		<div class="teaser-tab">
+			<span>
+				Lust zu lesen?
+			</span>
+		</div>
+		<div class="teaser-wrap">
+			<div class="teaser">
+				<a href="../boxen-ring-frei-für-alle">
+					<div class="bild teaser-boxen"></div>
+					<h3>Ring frei für alle</h3>
+					<div class="divline"></div>
+					<p>Die Generation Fitness entdeckt das Boxen.</p>
+				</a>
+			</div>
+			<div class="teaser">
+				<a href="../self-wohnen-in-einer-wundertüte">
+					<div class="bild teaser-self"></div>
+					<h3>Wohnen in einer Wundertüte</h3>
+					<div class="divline"></div>
+					<p><em>Self</em> ermöglicht Forschung mit Stil und Komfort.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<footer>
+		<p>© 2014 Created by Isabel Plana</p>
+		<div class="contact">
+			<a class="contact-twitter" href="https://twitter.com/iPlana">
+				<i class="icon-big">t</i>
+			</a>
+			<a class="contact-mail" href="mailto:mail@isabelplana.com">
+				<i class="icon-big">@</i>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>

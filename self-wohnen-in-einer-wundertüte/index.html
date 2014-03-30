@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html">
+	<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Self – Wohnen in einer Wundertüte</title>
+	<link rel="stylesheet" type="text/css" href="../portfolio.css">
+	<link rel="stylesheet" type="text/css" href="self.css">
+	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+
+            // Show / hide navigation when mouse hovers over menu button
+            $('.menu-button').hover(function () {
+                $('#navbar').addClass('navbar-visible');
+            	});
+            $('.menu-wrap').on('mouseleave', function () {
+            	$('#navbar').removeClass('navbar-visible');
+            	});
+
+           	// Remember width of article navigation so we can animate its width
+           	// var w = $(".article-navigation-text") 
+
+           	if ($(window).width() < 568){
+           		$('.drop-down-link').on('tap', function (event) {
+           			event.preventDefault();
+           			$('.article-list').toggleClass('article-list-visible')
+           		});
+           	}
+
+           	if ($(window).width() > 568){
+           		$(window).scroll(function(e) {
+			    	var s = $(window).scrollTop();
+			    	var opacityVal = 1 - (s / header);
+			    	if (opacityVal > 0) $('header').css('opacity', opacityVal);
+	
+			    	if($(window).scrollTop() > header - 60){
+						$('#navbar').addClass('navbar-visible');
+						$('.article-navigation').addClass('expanded');
+						$('.menu-wrap').off('mouseleave');
+					}
+					else {
+                	    $('#navbar').removeClass('navbar-visible');
+                	    $('.article-navigation').removeClass('expanded');
+                	    $('.menu-wrap').on('mouseleave', function () {
+            				$('#navbar').removeClass('navbar-visible');
+            			});
+                	}
+				});
+           	}
+			
+		})
+	</script>
+
+	<div class="menu-wrap">
+    	<div class="menu-button">
+    	    <a href="../home">
+    	    <i class="menu-button-icon">m</i>
+    	    <i class="menu-button-icon-hover">h</i>
+    	    </a>
+    	</div>
+    	<div class="article-navigation">
+    		<a href="../rioja-land-der-kühnen-winzer" class="article-navigation-link">
+            	<i class="article-navigation-icon">l</i>
+            	<span class="article-navigation-text">Land der kühnen Winzer</span>
+            </a>
+            <span class="article-navigation-separator">|</span>
+            <a href="../boxen-ring-frei-für-alle" class="article-navigation-link">
+            	<span class="article-navigation-text">Ring frei für alle</span>
+            	<i class="article-navigation-icon">r</i>
+            </a>
+        </div>
+		<nav id="navbar">
+    	    <ul class="menu">
+    	        <li class="menu-artikel">  
+    	            <a class="drop-down-link">Artikel<span class="menu-triangle">▾</span>
+    	                <ul class="article-list">
+    	                    <li>
+    	                    	<a href="../boxen-ring-frei-für-alle">Ring frei für alle</a>
+    	                    </li>
+    	                    <li>
+    	                    	<a href="../rioja-land-der-kühnen-winzer">Land der kühnen Winzer</a>
+    	                    </li>
+    	                    <li class="article-list-active">
+    	                    	Wohnen in einer Wundertüte
+    	                    </li>
+    	                </ul>
+    	            </a>
+    	        </li>
+    	    </ul>
+    	</nav>
+     </div>
+	
+	<header>
+	</header>
+
+	<div class="content">
+		<h1>
+			Wohnen in einer Wundertüte
+		</h1>
+		<div class="article-wrap">
+			<article>
+				<aside class="marginalie">
+					<div>
+						<div class="border">
+						</div>
+						<p>
+							<b>Wohnen in einer Wundertüte</b> erschien am 26. Februar 2010 im <em>Glattaler</em>.
+						</p>
+						<p>
+							Bilder: <a href="http://www.empa.ch">Empa</a>
+						</p>
+					</div>
+				</aside>
+				<section class="artikel">
+					<div class="lead">
+						Ohne Strom- und Wasseranschluss wohnen und dennoch nicht auf Komfort verzichten? Das geht. Mit der Raumzelle <em>Self</em> liefern der Empa-Forscher Mark Zimmermann und sein Team den Beweis.
+					</div>
+					<div class="text">
+						<p>
+							Verdunkelbares Fensterglas im Schlafzimmer. Ein Designer-Brünneli in der Küche. Ein Flachbildschirmfernseher an der Wand. Wenn man sich im Innern der Raumzelle <em>Self</em> aufhält, wähnt man sicher eher in einer topmodernen Neubauwohnung als in einer Forschungskonstruktion. «Es war uns wichtig, dass <em>Self</em> attraktiv daherkommt», sagt Mark Zimmermann, Architekt und Leiter des Forschungsprojekts an der Empa. «Durch die Gestaltung als Wohnraum wird die Aufmerksamkeit der Öffentlichkeit geweckt und die Akzeptanz unserer Entwicklungen gefördert.»
+						</p>
+						<p>
+							Neben den zwei Industriedesignern, die im Rahmen ihrer Diplomarbeit und im Auftrag der Empa das Aussehen der Raumzelle entworfen haben, waren diverse Forscher und Entwickler am Werk. Denn die Wohnung in der Grösse eines Schifffrachtcontainers, die sich mit Hilfe eines Sattelschleppers beliebig transportieren lässt, ist zugleich Kraftwerk und Forschungsplattform.
+						</p>
+						<h2>
+							Energie vom Dach
+						</h2>
+						<p>
+							«Die Raumzelle produziert ihren Strom selbst.» Zimmermann deutet auf das Dach, welches mit Fotovoltaikzellen ausgestattet ist. «Während rund neun Monaten kann damit aus dem Sonnenlicht Energie gewonnen werden.» Was aber passiert im Winter mit der Stromversorgung?
+						</p>
+						<p>
+							«Das Problem besteht darin, den produzierten Strom zu speichern», sagt Zimmermann. Er zeigt auf die zwei gut ein Meter langen Batterien, die unter dem Kajütenbett angebracht sind. «Das sind Lithium-Ionen-Batterien, wie sie auch für Handys  eingesetzt werden. Nur eben viel grösser.» Der Vorteil gegenüber konventionellen Bleibatterien: Sie sind wesentlich kompakter und entladen sich bei Nichtgebrauch kaum. «Im Sommer erzeugen die Fotovoltaikzellen mehr Strom, als für den unmittelbaren Verbrauch benötigt wird. Mit den Batterien lässt sich dieser Überschussstrom für den Winter speichern», erklärt der Forscher. 
+						</p>
+						</p>
+						<h2>
+						Zehnmal geringerer Wasserverbrauch
+						</h2>
+						<p>
+						<p>
+							Die insgesamt sechs überdimensionalen Handy-Batterien sind aber noch lange nicht alles. Zimmermann führt aussen herum zum hinteren Ende der Raumzelle. Hier schlägt das Herz von <em>Self</em>: Generatoren, Schläuche, Kabel, Schalter – ein Arsenal an Technik. Zimmermann führt seine Erklärungen fort: «Ein Teil des sommerlichen Energieüberschusses wird genutzt, um mittels Elektrolyse Wasserstoff zu produzieren. Dieser kann besser gespeichert werden als Elektrizität. Er wird zum Kochen und bei extremer Kälte zur Heizungsunterstützung eingesetzt.»
+						</p>
+						<p>
+							Die technologische Wundertüte wartet nicht nur mit einem ausgeklügelten Energieversorgungssystem auf. <em>Self</em> verfügt auch über eine eigene, durch die Eawag entwickelte Wasseraufbereitung. Auf dem Dach wird das Regenwasser aufgefangen und mittels Ultrafiltration zu Trinkwasser aufbereitet. Mit einem ähnlichen Verfahren wird auch das leicht verschmutzte Brauchwasser rezykliert, wodurch der Wasserverbrauch um das Zehnfache sinkt. Zimmermann: «Unsere Raumzelle ist vollkommen unabhängig. Sie braucht weder einen Strom- noch einen Wasseranschluss und kommt weg von nicht-erneuerbaren Energien. Zu beweisen, dass dies ohne wesentliche Einschränkung des Wohnkomforts möglich ist, war das Ziel unseres Forschungsprojekts.»
+						</p>
+
+						<div class="pic-wrap">
+							<div class="caption">
+								Forschung mit Sinn für Stil: Im Innern von <em>Self</em> wähnt man sich in einer modernen Neubauwohnung.
+							</div>
+							<img class="pic" src="self.jpg">
+							<div class="caption-mobile">
+								Forschung mit Sinn für Stil: Im Innern von <em>Self</em> wähnt man sich in einer modernen Neubauwohnung.
+							</div>
+						</div>
+						
+						<h2>
+							Tüfteln, testen, weiterentwickeln
+						</h2>
+						<p>
+							Das Ziel ist fast erreicht. An der Basler Swissbau-Messe Mitte Januar haben Empa und Eawag ihre Entwicklung präsentiert. Mit Erfolg. Der Anklang sei gross gewesen, sagt Zimmermann. Der endgültige Beweis muss aber noch erbracht werden: «Wir stehen kurz vor der Inbetriebnahme. Die Raumzelle wird bis in den Winter getestet.» Ab und an würden die Forscher auch für kürzere Zeit in der Raumzelle wohnen.
+						</p>
+						<p class="quote">
+							«<em>Self</em> dient uns als Forschungsplattform, mit der wir zukunftsweisende Systeme ausprobieren, Probleme aufzeigen und Entwicklungen in die Wege leiten können.»
+						</p>
+						<p>
+							«Die wirkliche Innovation unserer Raumzelle sind nicht einzelne Technologien. Die gab es teilweise schon vorher. Neuartig ist deren Kombination», erklärt Zimmermann. Um mit dem Zusammenspiel verschiedener Technologien, Systeme und Materialien experimentieren zu können – und weil Tests an richtigen Gebäuden in diesem Ausmass zu teuer wären –, haben sich die Empa-Forscher für die Realisierung einer Raumzelle entschieden. Hier können sie herumtüfteln, ausprobieren, optimieren. So ist etwa die aus sechs Schichten verschiedener Materialien aufgebaute hochisolierende Aussenwandkonstruktion entstanden, die nicht nur die Innentemperatur optimal reguliert, sondern auch den Lärm von aussen schluckt. «<em>Self</em> dient uns als Forschungsplattform, mit der wir zukunftsweisende Systeme ausprobieren, Probleme aufzeigen und Entwicklungen in die Wege leiten können», sagt Zimmermann. Die einzelnen Komponenten – etwa die Energieform Wasserstoff oder die Dämmung – könnten in Zukunft für Gebäude übernommen werden. Und was wird aus <em>Self</em>, wenn es sich ausgeforscht hat? «Dann kann die Raumzelle zum Beispiel als Gästezimmer für Empa-Besucher genutzt werden», sagt Zimmermann. «Oder als mobile Forschungsstation in den Bergen.»
+						</p>
+					</div>
+					<div class="marginalie-mobile">
+						<div class="border">
+						</div>
+						<span>
+							<b>Wohnen in einer Wundertüte</b> erschien am 26. Februar 2010 im <em>Glattaler</em>.
+						</span>
+						<span class="span-slash"> // 
+						</span>
+						<span>
+							Bilder: <a href="http://www.empa.ch">Empa</a>
+						</span>
+					</div>	
+				</section>
+			</article>
+		</div>
+	
+	<div class="teaser-bar">
+		<div class="teaser-tab">
+			<span>
+				Lust zu lesen?
+			</span>
+		</div>
+		<div class="teaser-wrap">
+			<div class="teaser">
+				<a href="../boxen-ring-frei-für-alle">
+					<div class="bild teaser-boxen"></div>
+					<h3>Ring frei für alle</h3>
+					<div class="divline"></div>
+					<p>Die Generation Fitness entdeckt das Boxen.</p>
+				</a>
+			</div>
+			<div class="teaser">
+				<a href="../rioja-land-der-kühnen-winzer">
+					<div class="bild teaser-rioja"></div>
+					<h3>Land der kühnen Winzer</h3>
+					<div class="divline"></div>
+					<p>Die Rioja ist nicht nur des Weines wegen eine Reise wert.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<footer>
+		<p>© 2014 Created by Isabel Plana</p>
+		<div class="contact">
+			<a class="contact-twitter" href="https://twitter.com/iPlana">
+				<i class="icon-big">t</i>
+			</a>
+			<a class="contact-mail" href="mailto:mail@isabelplana.com">
+				<i class="icon-big">@</i>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>

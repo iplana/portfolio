@@ -1,0 +1,48 @@
+header {
+	background-image: url(header.jpg);
+}
+h1 {
+ 	font: 500% "league-gothic", Arial, sans-serif;
+ 	letter-spacing: 1px;
+}
+
+/* Behaviour with varying window size */
+
+@media (min-device-width:320px) and (max-device-width: 568px) {
+	h1 {
+		font-size: 300%;
+		height: 80px;
+	}
+	.content {
+		margin-top: 150px;
+	}
+	
+}
+@media (min-width: 481px) and (max-width: 768px) {
+	header {
+		background-position: center bottom;
+	}
+	h1 {
+		font-size: 400%;
+		height: 140px;
+	}
+	.content {
+		margin-top: 360px;
+	}
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+	h1 {
+		font-size: 450%;
+		height: 160px;
+	}
+	.content {
+		margin-top: 400px;
+	}
+}
+@media (min-width: 1680px) {
+	h1 {
+		height: 200px;
+	}
+	.content {
+		margin-top: 600px;
+	}

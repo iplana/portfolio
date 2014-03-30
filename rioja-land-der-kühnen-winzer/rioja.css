@@ -1,0 +1,53 @@
+header {
+	background-image: url(header.jpg);
+}
+h1 {
+	font: 370% "alegreya-sc", serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 160px;
+}
+.content {
+	margin-top: 540px;
+}
+
+
+/* Behaviour with varying window size */
+
+@media (min-device-width:320px) and (max-device-width: 568px) {
+	h1 {
+		font-size: 200%;
+		height: 120px;
+		width: 300px;
+		margin: 0 auto;
+	}
+	.content {
+		margin-top: 110px;
+	}
+}
+@media (min-width: 569px) and (max-width: 768px) {
+	h1 {
+		font-size: 270%;
+		height: 100px;
+	}
+	.content {
+		margin-top: 400px;
+	}
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+	h1 {
+		font-size: 320%;
+		height: 140px;
+	}
+	.content {
+		margin-top: 420px;
+	}
+}
+@media (min-width: 1680px) {
+	h1 {
+		height: 180px;
+	}
+	.content {
+		margin-top: 620px;
+	}
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html">
+	<meta name="viewport" content="width=320px, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Isabel Plana</title>
+	<link rel="stylesheet" type="text/css" href="../portfolio.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<script type="text/javascript" src="//use.typekit.net/udf4obp.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var header = $("header").height();
+
+            // Show / hide navigation when mouse hovers over menu button
+            $('.menu-button').hover(function () {
+                $('#navbar').addClass('navbar-visible');
+            	});
+            $('.menu-wrap').on('mouseleave', function () {
+            	$('#navbar').removeClass('navbar-visible');
+            	});
+
+           	// Remember width of article navigation so we can animate its width
+           	// var w = $(".article-navigation-text") 
+
+           	if ($(window).width() < 568){
+           		$('.drop-down-link').on('tap', function (event) {
+           			event.preventDefault();
+           			$('.artikel-liste').toggleClass('artikel-liste-visible')
+           		});
+           	}
+
+           	if ($(window).width() > 568){
+           		$(window).scroll(function(e) {
+			    	var s = $(window).scrollTop();
+			    	var opacityVal = 1 - (s / header);
+			    	if (opacityVal > 0) $('header').css('opacity', opacityVal);
+	
+			    	if($(window).scrollTop() > header - 60){
+						$('#navbar').addClass('navbar-visible');
+						$('.article-navigation').addClass('expanded');
+						$('.menu-wrap').off('mouseleave');
+					}
+					else {
+                	    $('#navbar').removeClass('navbar-visible');
+                	    $('.article-navigation').removeClass('expanded');
+                	    $('.menu-wrap').on('mouseleave', function () {
+            				$('#navbar').removeClass('navbar-visible');
+            			});
+                	}
+				});
+           	}
+			
+		})
+	</script>
+
+	<div class="menu-wrap">
+    	<div class="menu-button">
+    	    <a href="../home">
+    	    <i class="menu-button-icon">m</i>
+    	    <i class="menu-button-icon-hover">h</i>
+    	    </a>
+    	</div>
+    	<div class="article-navigation">
+    		<a href="../self-wohnen-in-einer-wundertüte" class="article-navigation-link">
+            	<i class="article-navigation-icon">l</i>
+            	<span class="article-navigation-text">Land der kühnen Winzer</span>
+            </a>
+            <span class="article-navigation-separator">|</span>
+            <a href="../rioja-land-der-kühnen-winzer" class="article-navigation-link">
+            	<span class="article-navigation-text">Wohnen in einer Wundertüte</span>
+            	<i class="article-navigation-icon">r</i>
+            </a>
+        </div>
+		<nav id="navbar">
+    	    <ul class="menu">
+    	        <li class="menu-artikel">  
+    	            <a class="drop-down-link">Artikel<span class="menu-triangle">▾</span>
+    	                <ul class="article-list">
+    	                    <li>
+    	                    	<a href="../boxen-ring-frei-für-alle">Ring frei für alle</a>
+    	                    </li>
+    	                    <li>
+    	                    	<a href="../rioja-land-der-kühnen-winzer">Land der kühnen Winzer</a>
+    	                    </li>
+    	                    <li>
+    	                    	<a href="../self-wohnen-in-einer-wundertüte">Wohnen in einer Wundertüte</a>
+    	                    </li>
+    	                </ul>
+    	            </a>
+    	        </li>
+    	    </ul>
+    	</nav>
+     </div>
+
+	<header>
+	</header>
+
+	<div class="content">
+		<h1>
+			Hallo Welt!
+		</h1>
+		<div class="article-wrap">
+			<article>
+				<div class="home-text">
+					<p>Das bin ich, Isabel Plana. Wetterfeste Journalistin und schreiblustige Geografin aus Zürich.</p>
+
+					<p>Ich schreibe, lektoriere und übersetze. Fotografiere, gestalte und visualisiere.</p>
+
+					<p>Als schweizerisch-spanischer Hybrid bin ich mit zwei Sprachen und zwei Kulturen gross geworden. </p>
+
+					<p>Vielfalt Blabla, Themen die mich interessieren</p>
+
+					<p>Meine Mission: Die Welt begreifen und begreifbar machen.</p> 
+
+					<p>Heute freischaffend für verschiedene Medien und Agenturen, war ich vorher Redakteurin beim Glattaler und Kommunikationsmitarbeiterin bei MeteoSchweiz.</p>
+
+					<p>Am liebsten schreibe ich Reportagen, Porträts und Glossen. Ich bin mir aber auch für Medienmitteilungen und ausgewählte PR-Texte nicht zu schade.</p>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<div class="teaser-bar">
+		<div class="teaser-tab">
+			<span>
+				Leseproben
+			</span>
+		</div>
+		<div class="teaser-wrap">
+			<div class="teaser">
+				<a href="../boxen-ring-frei-für-alle">
+					<div class="bild teaser-boxen"></div>
+					<h3>Ring frei für alle</h3>
+					<div class="divline"></div>
+					<p>Die Generation Fitness entdeckt das Boxen.</p>
+				</a>
+			</div>
+			<div class="teaser">
+				<a href="../rioja-land-der-kühnen-winzer">
+					<div class="bild teaser-rioja"></div>
+					<h3>Land der kühnen Winzer</h3>
+					<div class="divline"></div>
+					<p>Die Rioja ist nicht nur des Weines wegen eine Reise wert.</p>
+				</a>
+			</div>
+			<div class="teaser">
+				<a href="../self-wohnen-in-einer-wundertüte">
+					<div class="bild teaser-self"></div>
+					<h3>Wohnen in einer Wundertüte</h3>
+					<div class="divline"></div>
+					<p><em>Self</em> ermöglicht Forschung mit Stil und Komfort.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer>
+		<p>© 2014 Created by Isabel Plana</p>
+		<div class="contact">
+			<a class="contact-twitter" href="https://twitter.com/iPlana">
+				<i class="icon-big">t</i>
+			</a>
+			<a class="contact-mail" href="mailto:mail@isabelplana.com">
+				<i class="icon-big">@</i>
+			</a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+	background-color: white;
+}
+
+header {
+	background-image: url(header.jpg);
+	background-position: center bottom;
+}
+.content {
+	margin-top: 580px;
+}
+h1 {
+	font: 320% "sommet-rounded", sans-serif;
+	font-weight: 700;
+	color: black;
+	height: 120px;
+}
+
+/* Behaviour with varying window size */
+
+@media (min-device-width:320px) and (max-device-width: 568px) {
+	h1 {
+		font-size: 150%;
+		height: 35px;
+	}
+	.content {
+		margin-top: 195px;
+	}
+}
+@media (min-width: 569px) and (max-width: 768px) {
+	h1 {
+		font-size: 240%;
+		height: 60px;
+	}
+	.content {
+		margin-top: 440px;
+	}
+}
+@media (min-width: 769px) and (max-width: 1400px) {
+	h1 {
+		font-size: 290%;
+		height: 90px;
+	}
+	.content {
+		margin-top: 470px;
+	}
+}
+@media (min-width: 1680px) {
+	h1 {
+		height: 120px;
+	}
+	.content {
+		margin-top: 680px;
+	}
+}
