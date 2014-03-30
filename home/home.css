@@ -3,7 +3,7 @@ body {
 }
 header {
 	background-image: url(header.jpg);
-	background-position: 50% 85%;
+	background-position: 50% 90%;
 	height: 800px; 
 }
 h1 {
@@ -60,13 +60,14 @@ h1 {
 }
 @media (min-width: 769px) and (max-width: 1400px) {
 	header {
-		height: 700px;
+		height: 600px;
+		background-position: 50% 75%;
 	}
 	h1 {
 		font-size: 250%;
 	}
 	.content {
-		margin-top: 700px;
+		margin-top: 600px;
 	}
 }
 
