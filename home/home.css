@@ -10,7 +10,7 @@ h1 {
 	height: 80px;
 	font-size: 300%;
 	color: black;
-	padding-top: 0.5em;
+	padding-top: 1em;
 	background-color: white;
 }
 #container-home {
@@ -19,13 +19,27 @@ h1 {
 	max-width: 750px;
 }
 .content {
-	margin-top: 800px;
+	margin-top: 60px !important;
 }
 .home-text {
 	width: 50%;
 	margin: 0 auto;
 }
 
+.profile-image {
+	width: 55%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+article img {
+	width: 100%;
+	margin-bottom: 2em;
+}
 /* Behaviour with varying window size */
 
 @media (max-width: 480px) {
@@ -41,6 +55,9 @@ h1 {
 	.home-text {
 		width: 90%;
 		margin: 0 auto;
+	}
+	article {
+		padding: 0 !important;
 	}
 }
 @media (min-width: 481px) and (max-width: 768px) {

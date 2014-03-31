@@ -133,6 +133,10 @@ i {
 	color: #99E6CB;
 }
 
+.drop-down-link {
+	cursor: pointer;
+}
+
 #navbar:hover .menu {
 	display: block;
 }
